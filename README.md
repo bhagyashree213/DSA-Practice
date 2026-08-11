@@ -8,6 +8,7 @@ This repository contains **Data Structures practical programs implemented in C**
 | --- | ------------- | -------------------- |
 | 1   | Linear Search | `01_Linear_Search.c` |
 | 2   | Binary Search | `02_Binary_Search.c` |
+| 3   | Bubble Sort   | `03_Bubble_Sort.c`   |
 
 ## 🛠️ Language
 
@@ -17,16 +18,25 @@ This repository contains **Data Structures practical programs implemented in C**
 
 Compile the program using GCC:
 
+### Linear Search
+
 ```bash
 gcc 01_Linear_Search.c -o linear_search
 ./linear_search
 ```
 
-For Binary Search:
+### Binary Search
 
 ```bash
 gcc 02_Binary_Search.c -o binary_search
 ./binary_search
+```
+
+### Bubble Sort
+
+```bash
+gcc 03_Bubble_Sort.c -o bubble_sort
+./bubble_sort
 ```
 
 ## 🎯 Purpose
