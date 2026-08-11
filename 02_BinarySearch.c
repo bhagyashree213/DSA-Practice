@@ -1,4 +1,4 @@
-* Binary Search in C
+# Binary Search in C
 Code –
 #include <stdio.h>
 int main() {
