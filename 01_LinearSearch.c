@@ -1,4 +1,4 @@
-1.	Linear Search in C
+# Linear Search in C
 Code – 
 #include <stdio.h>
 int main() {
