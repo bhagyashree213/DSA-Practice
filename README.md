@@ -4,11 +4,12 @@ This repository contains **Data Structures practical programs implemented in C**
 
 ## 📚 Practicals
 
-| No. | Program       | File                 |
-| --- | ------------- | -------------------- |
-| 1   | Linear Search | `01_Linear_Search.c` |
-| 2   | Binary Search | `02_Binary_Search.c` |
-| 3   | Bubble Sort   | `03_Bubble_Sort.c`   |
+| **No.** | **Program**         | **File**                |
+| ------- | ------------------- | ----------------------- |
+| 1       | Linear Search       | `01_Linear_Search.c`    |
+| 2       | Binary Search       | `02_Binary_Search.c`    |
+| 3       | Bubble Sort         | `03_Bubble_Sort.c`      |
+| 4       | Swap of Two Numbers | `04_Swap_Two_Numbers.c` |
 
 ## 🛠️ Language
 
@@ -37,6 +38,13 @@ gcc 02_Binary_Search.c -o binary_search
 ```bash
 gcc 03_Bubble_Sort.c -o bubble_sort
 ./bubble_sort
+```
+
+### Swap of Two Numbers
+
+```bash
+gcc 04_Swap_Two_Numbers.c -o swap
+./swap
 ```
 
 ## 🎯 Purpose
