@@ -1,4 +1,4 @@
-04_Swapoftwonumbers
+# Swap of two Numbers
 Code -
 #include <stdio.h>
 int main() {
