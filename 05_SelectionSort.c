@@ -1,4 +1,4 @@
-05_SelectionSort
+# Selection Sort
 Code -
 #include <stdio.h>
 int main() {
@@ -30,3 +30,9 @@ int main() {
     }
     return 0;
 }
+
+Output -
+Enter number of elements: 5
+Enter 5 elements:
+64 25 12 22 11
+Sorted array: 11 12 22 25 64
