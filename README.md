@@ -1,10 +1,9 @@
 # 📚 Data Structures Practicals in C
 
-![C](https://img.shields.io/badge/Language-C-blue)
-![Data Structures](https://img.shields.io/badge/Subject-Data%20Structures-green)
-![Status](https://img.shields.io/badge/Status-In%20Progress-orange)
+## C Data Structures Status
 
-A collection of **Data Structures and Algorithms practical programs implemented in C**.  
+A collection of Data Structures and Algorithms practical programs implemented in C.
+
 This repository is created for learning, practicing, and maintaining C programming practicals.
 
 ---
@@ -13,8 +12,8 @@ This repository is created for learning, practicing, and maintaining C programmi
 
 - [About](#-about)
 - [Practicals](#-practicals)
-- [Technologies Used](#-technologies-used)
-- [How to Run](#-how-to-run)
+- [Technologies Used](#️-technologies-used)
+- [How to Run](#️-how-to-run)
 - [Time Complexity](#-time-complexity)
 - [Repository Structure](#-repository-structure)
 - [Purpose](#-purpose)
@@ -24,9 +23,9 @@ This repository is created for learning, practicing, and maintaining C programmi
 
 ## 📖 About
 
-This repository contains basic **Data Structures and Algorithms programs in C**.
+This repository contains basic Data Structures and Algorithms programs in C.
 
-The programs are written in a simple and beginner-friendly way to understand the concepts and implementation of different searching and sorting techniques.
+The programs are written in a simple and beginner-friendly way to understand the concepts and implementation of different searching, sorting, and basic programming techniques.
 
 ---
 
@@ -34,19 +33,21 @@ The programs are written in a simple and beginner-friendly way to understand the
 
 | No. | Practical | File |
 |---|---|---|
-| 1 | Linear Search | `01_Linear_Search.c` |
-| 2 | Binary Search | `02_Binary_Search.c` |
-| 3 | Bubble Sort | `03_Bubble_Sort.c` |
-| 4 | Swap of Two Numbers | `04_Swap_Two_Numbers.c` |
-| 5 | Selection Sort | `05_Selection_Sort.c` |
+| 1 | Linear Search | `01_LinearSearch.c` |
+| 2 | Binary Search | `02_BinarySearch.c` |
+| 3 | Bubble Sort | `03_BubbleSort.c` |
+| 4 | Swap of Two Numbers | `04_Swapoftwonumbers.c` |
+| 5 | Find Minimum and Maximum | `05_find_min_max.c` |
+| 6 | Selection Sort | `06_SelectionSort.c` |
 
 ---
 
 ## 🛠️ Technologies Used
 
-- **C Programming**
-- **GCC Compiler**
-- **Git & GitHub**
+- C Programming
+- GCC Compiler
+- Git
+- GitHub
 
 ---
 
@@ -54,7 +55,7 @@ The programs are written in a simple and beginner-friendly way to understand the
 
 ### Prerequisites
 
-Make sure **GCC** is installed on your system.
+Make sure GCC is installed on your system.
 
 Check GCC installation:
 
