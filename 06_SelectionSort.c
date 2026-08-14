@@ -2,7 +2,6 @@
 Code -
 #include <stdio.h>
 int main() {
-    // Write C code here
     int a[100], n, i,j, min, temp;
     printf("Enter number of elements:\n");
     scanf("%d",&n);
@@ -36,6 +35,7 @@ int main() {
     }
     return 0;
 }
+
 Output -
 Enter number of elements:
 5
