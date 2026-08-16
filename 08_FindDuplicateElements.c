@@ -1,4 +1,4 @@
-# Find Duplicate Elements in an Array — C
+# Find Duplicate Elements in an Array 
 Code -
 #include <stdio.h>
 int main() {
