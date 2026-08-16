@@ -31,15 +31,16 @@ The programs are written in a **simple and beginner-friendly way** to understand
 
 ## 📚 Practicals
 
-| **No.** | **Practical**            | **File**                |
-| ------: | ------------------------ | ----------------------- |
-|       1 | Linear Search            | `01_LinearSearch.c`     |
-|       2 | Binary Search            | `02_BinarySearch.c`     |
-|       3 | Bubble Sort              | `03_BubbleSort.c`       |
-|       4 | Swap of Two Numbers      | `04_Swapoftwonumbers.c` |
-|       5 | Find Minimum and Maximum | `05_find_min_max.c`     |
-|       6 | Selection Sort           | `06_SelectionSort.c`    |
-|       7 | Reverse an Array         | `07_ReverseArray.c`     |
+| **No.** | **Practical**            | **File**                     |
+| ------: | ------------------------ | ---------------------------- |
+|       1 | Linear Search            | `01_LinearSearch.c`          |
+|       2 | Binary Search            | `02_BinarySearch.c`          |
+|       3 | Bubble Sort              | `03_BubbleSort.c`            |
+|       4 | Swap of Two Numbers      | `04_Swapoftwonumbers.c`      |
+|       5 | Find Minimum and Maximum | `05_find_min_max.c`          |
+|       6 | Selection Sort           | `06_SelectionSort.c`         |
+|       7 | Reverse an Array         | `07_ReverseArray.c`          |
+|       8 | Find Duplicate Elements  | `08_FindDuplicateElements.c` |
 
 ---
 
@@ -69,7 +70,7 @@ gcc --version
 For example:
 
 ```bash
-gcc 07_ReverseArray.c -o ReverseArray
+gcc 08_FindDuplicateElements.c -o FindDuplicateElements
 ```
 
 ### Run the Program
@@ -77,13 +78,13 @@ gcc 07_ReverseArray.c -o ReverseArray
 **Windows:**
 
 ```bash
-ReverseArray
+FindDuplicateElements
 ```
 
 **Linux / macOS:**
 
 ```bash
-./ReverseArray
+./FindDuplicateElements
 ```
 
 ---
@@ -99,6 +100,7 @@ ReverseArray
 | Find Minimum and Maximum | `O(n)`              |
 | Selection Sort           | `O(n²)`             |
 | Reverse an Array         | `O(n)`              |
+| Find Duplicate Elements  | `O(n²)`             |
 
 ---
 
@@ -114,6 +116,7 @@ DSA-Practice/
 ├── 05_find_min_max.c
 ├── 06_SelectionSort.c
 ├── 07_ReverseArray.c
+├── 08_FindDuplicateElements.c
 └── README.md
 ```
 
