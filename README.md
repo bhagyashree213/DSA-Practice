@@ -32,19 +32,20 @@ The repository includes practical implementations of:
 
 ## 📚 Practicals
 
-| No. | Practical                | File                         |
-| --- | ------------------------ | ---------------------------- |
-| 1   | Linear Search            | `01_LinearSearch.c`          |
-| 2   | Binary Search            | `02_BinarySearch.c`          |
-| 3   | Bubble Sort              | `03_BubbleSort.c`            |
-| 4   | Swap of Two Numbers      | `04_Swapoftwonumbers.c`      |
-| 5   | Find Minimum and Maximum | `05_find_min_max.c`          |
-| 6   | Selection Sort           | `06_SelectionSort.c`         |
-| 7   | Reverse an Array         | `07_ReverseArray.c`          |
-| 8   | Find Duplicate Elements  | `08_FindDuplicateElements.c` |
-| 9   | Quick Sort               | `09_QuickSort.c`             |
-| 10  | Circular Queue           | `10_CircularQueue.c`         |
-| 11  | Insertion Sort           | `11_InsertionSort.c`         |
+| **No.** | **Practical**            | **File**                     |
+| ------: | ------------------------ | ---------------------------- |
+|       1 | Linear Search            | `01_LinearSearch.c`          |
+|       2 | Binary Search            | `02_BinarySearch.c`          |
+|       3 | Bubble Sort              | `03_BubbleSort.c`            |
+|       4 | Swap of Two Numbers      | `04_Swapoftwonumbers.c`      |
+|       5 | Find Minimum and Maximum | `05_find_min_max.c`          |
+|       6 | Selection Sort           | `06_SelectionSort.c`         |
+|       7 | Reverse an Array         | `07_ReverseArray.c`          |
+|       8 | Find Duplicate Elements  | `08_FindDuplicateElements.c` |
+|       9 | Quick Sort               | `09_QuickSort.c`             |
+|      10 | Circular Queue           | `10_CircularQueue.c`         |
+|      11 | Insertion Sort           | `11_InsertionSort.c`         |
+|      12 | Merge Sort               | `12_MergeSort.c`             |
 
 ## 🔍 1. Linear Search
 
@@ -157,6 +158,19 @@ Insertion Sort is a simple sorting algorithm that builds the sorted array one el
 * **Worst Case:** O(n²)
 * **Space Complexity:** O(1)
 
+## 🔀 12. Merge Sort
+
+Merge Sort is a divide-and-conquer sorting algorithm. It divides the array into smaller subarrays, sorts them, and then merges them to produce a sorted array.
+
+**File:** `12_MergeSort.c`
+
+### Merge Sort Complexity
+
+* **Best Case:** O(n log n)
+* **Average Case:** O(n log n)
+* **Worst Case:** O(n log n)
+* **Space Complexity:** O(n)
+
 ## 🛠️ Technologies Used
 
 * C Programming
@@ -179,8 +193,10 @@ gcc --version
 
 ### Compile a Program
 
+For example, to compile Merge Sort:
+
 ```bash
-gcc 11_InsertionSort.c -o insertion_sort
+gcc 12_MergeSort.c -o merge_sort
 ```
 
 ### Run the Program
@@ -188,34 +204,35 @@ gcc 11_InsertionSort.c -o insertion_sort
 **Windows:**
 
 ```bash
-insertion_sort.exe
+merge_sort.exe
 ```
 
 **Linux/macOS:**
 
 ```bash
-./insertion_sort
+./merge_sort
 ```
 
 You can follow the same process for any practical by replacing the filename.
 
 ## ⏱️ Time Complexity
 
-| Algorithm                |  Best Case | Average Case | Worst Case |
-| ------------------------ | ---------: | -----------: | ---------: |
-| Linear Search            |       O(1) |         O(n) |       O(n) |
-| Binary Search            |       O(1) |     O(log n) |   O(log n) |
-| Bubble Sort              |       O(n) |        O(n²) |      O(n²) |
-| Selection Sort           |      O(n²) |        O(n²) |      O(n²) |
-| Insertion Sort           |       O(n) |        O(n²) |      O(n²) |
-| Quick Sort               | O(n log n) |   O(n log n) |      O(n²) |
-| Find Min & Max           |       O(n) |         O(n) |       O(n) |
-| Reverse Array            |       O(n) |         O(n) |       O(n) |
-| Find Duplicates          |      O(n²) |        O(n²) |      O(n²) |
-| Swap Two Numbers         |       O(1) |         O(1) |       O(1) |
-| Circular Queue – Enqueue |       O(1) |         O(1) |       O(1) |
-| Circular Queue – Dequeue |       O(1) |         O(1) |       O(1) |
-| Circular Queue – Display |       O(n) |         O(n) |       O(n) |
+| **Algorithm**            | **Best Case** | **Average Case** | **Worst Case** |
+| ------------------------ | ------------: | ---------------: | -------------: |
+| Linear Search            |          O(1) |             O(n) |           O(n) |
+| Binary Search            |          O(1) |         O(log n) |       O(log n) |
+| Bubble Sort              |          O(n) |            O(n²) |          O(n²) |
+| Selection Sort           |         O(n²) |            O(n²) |          O(n²) |
+| Insertion Sort           |          O(n) |            O(n²) |          O(n²) |
+| Quick Sort               |    O(n log n) |       O(n log n) |          O(n²) |
+| Merge Sort               |    O(n log n) |       O(n log n) |     O(n log n) |
+| Find Min & Max           |          O(n) |             O(n) |           O(n) |
+| Reverse Array            |          O(n) |             O(n) |           O(n) |
+| Find Duplicates          |         O(n²) |            O(n²) |          O(n²) |
+| Swap Two Numbers         |          O(1) |             O(1) |           O(1) |
+| Circular Queue – Enqueue |          O(1) |             O(1) |           O(1) |
+| Circular Queue – Dequeue |          O(1) |             O(1) |           O(1) |
+| Circular Queue – Display |          O(n) |             O(n) |           O(n) |
 
 ## 📂 Repository Structure
 
@@ -233,6 +250,7 @@ DSA-Practice/
 ├── 09_QuickSort.c
 ├── 10_CircularQueue.c
 ├── 11_InsertionSort.c
+├── 12_MergeSort.c
 └── README.md
 ```
 
