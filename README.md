@@ -19,7 +19,7 @@ This repository is created for learning, practicing, and maintaining C programmi
 
 This repository contains basic Data Structures and Algorithms programs in C.
 
-The programs are written in a simple and beginner-friendly way to understand searching, sorting, arrays, and other fundamental DSA concepts.
+The programs are written in a simple and beginner-friendly way to understand searching, sorting, arrays, and fundamental data structures.
 
 The repository includes practical implementations of:
 
@@ -29,6 +29,7 @@ The repository includes practical implementations of:
 * Basic Programming Problems
 * Fundamental Data Structures and Algorithms
 * Circular Queue
+* Singly Linked List
 
 ## 📚 Practicals
 
@@ -46,6 +47,7 @@ The repository includes practical implementations of:
 |      10 | Circular Queue           | `10_CircularQueue.c`         |
 |      11 | Insertion Sort           | `11_InsertionSort.c`         |
 |      12 | Merge Sort               | `12_MergeSort.c`             |
+|      13 | Singly Linked List       | `13_SinglyLinkedList.c`      |
 
 ## 🔍 1. Linear Search
 
@@ -171,6 +173,24 @@ Merge Sort is a divide-and-conquer sorting algorithm. It divides the array into 
 * **Worst Case:** O(n log n)
 * **Space Complexity:** O(n)
 
+## 🔗 13. Singly Linked List
+
+A Singly Linked List is a linear data structure where each node contains data and a pointer to the next node.
+
+This program creates a singly linked list by taking values from the user and inserting each node at the end of the list.
+
+**File:** `13_SinglyLinkedList.c`
+
+### Operations
+
+* Insert
+* Display
+
+### Time Complexity
+
+* **Insert at End:** O(n)
+* **Display:** O(n)
+
 ## 🛠️ Technologies Used
 
 * C Programming
@@ -189,83 +209,3 @@ Check GCC installation using:
 
 ```bash
 gcc --version
-```
-
-### Compile a Program
-
-For example, to compile Merge Sort:
-
-```bash
-gcc 12_MergeSort.c -o merge_sort
-```
-
-### Run the Program
-
-**Windows:**
-
-```bash
-merge_sort.exe
-```
-
-**Linux/macOS:**
-
-```bash
-./merge_sort
-```
-
-You can follow the same process for any practical by replacing the filename.
-
-## ⏱️ Time Complexity
-
-| **Algorithm**            | **Best Case** | **Average Case** | **Worst Case** |
-| ------------------------ | ------------: | ---------------: | -------------: |
-| Linear Search            |          O(1) |             O(n) |           O(n) |
-| Binary Search            |          O(1) |         O(log n) |       O(log n) |
-| Bubble Sort              |          O(n) |            O(n²) |          O(n²) |
-| Selection Sort           |         O(n²) |            O(n²) |          O(n²) |
-| Insertion Sort           |          O(n) |            O(n²) |          O(n²) |
-| Quick Sort               |    O(n log n) |       O(n log n) |          O(n²) |
-| Merge Sort               |    O(n log n) |       O(n log n) |     O(n log n) |
-| Find Min & Max           |          O(n) |             O(n) |           O(n) |
-| Reverse Array            |          O(n) |             O(n) |           O(n) |
-| Find Duplicates          |         O(n²) |            O(n²) |          O(n²) |
-| Swap Two Numbers         |          O(1) |             O(1) |           O(1) |
-| Circular Queue – Enqueue |          O(1) |             O(1) |           O(1) |
-| Circular Queue – Dequeue |          O(1) |             O(1) |           O(1) |
-| Circular Queue – Display |          O(n) |             O(n) |           O(n) |
-
-## 📂 Repository Structure
-
-```text
-DSA-Practice/
-│
-├── 01_LinearSearch.c
-├── 02_BinarySearch.c
-├── 03_BubbleSort.c
-├── 04_Swapoftwonumbers.c
-├── 05_find_min_max.c
-├── 06_SelectionSort.c
-├── 07_ReverseArray.c
-├── 08_FindDuplicateElements.c
-├── 09_QuickSort.c
-├── 10_CircularQueue.c
-├── 11_InsertionSort.c
-├── 12_MergeSort.c
-└── README.md
-```
-
-## 🎯 Purpose
-
-The main purpose of this repository is to:
-
-* Practice Data Structures and Algorithms in C
-* Understand basic searching and sorting techniques
-* Improve problem-solving skills
-* Maintain practical programs in one place
-* Build a strong foundation in DSA
-
-## 👩‍💻 Author
-
-**Bhagyashree Bhusare**
-
-This repository is created for learning, practice, and academic Data Structures practicals.
