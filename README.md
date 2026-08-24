@@ -48,6 +48,7 @@ The repository includes practical implementations of:
 |      11 | Insertion Sort           | `11_InsertionSort.c`         |
 |      12 | Merge Sort               | `12_MergeSort.c`             |
 |      13 | Singly Linked List       | `13_SinglyLinkedList.c`      |
+|      14 | Deletion from Array      | `14_DeletionFromArray.c`     |
 
 ## 🔍 1. Linear Search
 
@@ -191,6 +192,25 @@ This program creates a singly linked list by taking values from the user and ins
 * **Insert at End:** O(n)
 * **Display:** O(n)
 
+## 🗑️ 14. Deletion from Array
+
+This program deletes an element from an array based on the position entered by the user.
+
+After deletion, the remaining elements are shifted one position to the left to fill the empty space.
+
+**File:** `14_DeletionFromArray.c`
+
+### Operations
+
+* Enter array elements
+* Delete an element from a specified position
+* Display the updated array
+
+### Time Complexity
+
+* **Deletion:** O(n)
+* **Display:** O(n)
+
 ## 🛠️ Technologies Used
 
 * C Programming
@@ -209,3 +229,96 @@ Check GCC installation using:
 
 ```bash
 gcc --version
+```
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/your-username/DSA-in-C.git
+```
+
+### Navigate to the Repository
+
+```bash
+cd DSA-in-C
+```
+
+### Compile a Program
+
+For example:
+
+```bash
+gcc 14_DeletionFromArray.c -o deletion
+```
+
+### Run the Program
+
+**Windows:**
+
+```bash
+deletion.exe
+```
+
+**Linux/macOS:**
+
+```bash
+./deletion
+```
+
+## ⏱️ Time Complexity
+
+| **Algorithm / Operation** | **Time Complexity** |
+| ------------------------- | ------------------- |
+| Linear Search             | O(n)                |
+| Binary Search             | O(log n)            |
+| Bubble Sort               | O(n²)               |
+| Selection Sort            | O(n²)               |
+| Insertion Sort            | O(n²)               |
+| Merge Sort                | O(n log n)          |
+| Quick Sort                | O(n log n) Average  |
+| Find Minimum & Maximum    | O(n)                |
+| Reverse Array             | O(n)                |
+| Find Duplicate Elements   | O(n²)               |
+| Circular Queue Enqueue    | O(1)                |
+| Circular Queue Dequeue    | O(1)                |
+| Linked List Insert at End | O(n)                |
+| Array Deletion            | O(n)                |
+
+## 📂 Repository Structure
+
+```text
+DSA-in-C/
+│
+├── 01_LinearSearch.c
+├── 02_BinarySearch.c
+├── 03_BubbleSort.c
+├── 04_Swapoftwonumbers.c
+├── 05_find_min_max.c
+├── 06_SelectionSort.c
+├── 07_ReverseArray.c
+├── 08_FindDuplicateElements.c
+├── 09_QuickSort.c
+├── 10_CircularQueue.c
+├── 11_InsertionSort.c
+├── 12_MergeSort.c
+├── 13_SinglyLinkedList.c
+├── 14_DeletionFromArray.c
+└── README.md
+```
+
+## 🎯 Purpose
+
+The purpose of this repository is to:
+
+* Learn Data Structures and Algorithms using C
+* Practice fundamental programming concepts
+* Understand algorithm implementation and complexity
+* Build a collection of DSA practical programs
+* Improve problem-solving and programming skills
+* Maintain practical programs for academic and interview preparation
+
+## 👩‍💻 Author
+
+**Bhagyashree Bhusare**
+
+This repository is maintained for learning, practice, and academic purposes.
