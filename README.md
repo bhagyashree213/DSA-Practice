@@ -194,14 +194,6 @@ After deletion, the remaining elements are shifted one position to the left to f
 * **Deletion:** O(n)
 * **Display:** O(n)
 
-## 🛠️ Technologies Used
-
-* C Programming
-* GCC Compiler
-* Git
-* GitHub
-* Visual Studio Code
-
 ## ➕ 14. Insertion in Array
 
 This program inserts a new element into an array at a position entered by the user.
@@ -347,7 +339,14 @@ DSA-in-C/
 ├── 15_SinglyLinkedList.c
 └── README.md
 ```
+## 🛠️ Technologies Used
 
+* C Programming
+* GCC Compiler
+* Git
+* GitHub
+* Visual Studio Code
+  
 ## 🎯 Purpose
 
 The purpose of this repository is to:
