@@ -181,7 +181,7 @@ This program deletes an element from an array based on the position entered by t
 
 After deletion, the remaining elements are shifted one position to the left to fill the empty space.
 
-**File:** `13_DeletionFromArray.c`
+**File:** `13_Deletionfromarray.c`
 
 ### Operations
 
