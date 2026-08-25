@@ -47,8 +47,9 @@ The repository includes practical implementations of:
 |      10 | Circular Queue           | `10_CircularQueue.c`         |
 |      11 | Insertion Sort           | `11_InsertionSort.c`         |
 |      12 | Merge Sort               | `12_MergeSort.c`             |
-|      13 | Singly Linked List       | `13_SinglyLinkedList.c`      |
-|      14 | Deletion from Array      | `14_DeletionFromArray.c`     |
+|      13 | Deletion from Array      | `13_DeletionFromArray.c`     |
+|      14 | Insertion in Array       | `14_InsertiElementarray.c`   |
+|      15 | Singly Linked List       | `15_SinglyLinkedList.c`      |
 
 ## 🔍 1. Linear Search
 
@@ -174,31 +175,13 @@ Merge Sort is a divide-and-conquer sorting algorithm. It divides the array into 
 * **Worst Case:** O(n log n)
 * **Space Complexity:** O(n)
 
-## 🔗 13. Singly Linked List
-
-A Singly Linked List is a linear data structure where each node contains data and a pointer to the next node.
-
-This program creates a singly linked list by taking values from the user and inserting each node at the end of the list.
-
-**File:** `13_SinglyLinkedList.c`
-
-### Operations
-
-* Insert
-* Display
-
-### Time Complexity
-
-* **Insert at End:** O(n)
-* **Display:** O(n)
-
-## 🗑️ 14. Deletion from Array
+## 🗑️ 13. Deletion from Array
 
 This program deletes an element from an array based on the position entered by the user.
 
 After deletion, the remaining elements are shifted one position to the left to fill the empty space.
 
-**File:** `14_DeletionFromArray.c`
+**File:** `13_DeletionFromArray.c`
 
 ### Operations
 
@@ -218,6 +201,64 @@ After deletion, the remaining elements are shifted one position to the left to f
 * Git
 * GitHub
 * Visual Studio Code
+
+## ➕ 14. Insertion in Array
+
+This program inserts a new element into an array at a position entered by the user.
+
+The elements after the specified position are shifted one position to the right to create space for the new element.
+
+**File:** `14_InsertElementarray.c`
+
+### Operations
+
+* Enter array elements
+* Enter the position for insertion
+* Enter the element to insert
+* Display the updated array
+
+### Time Complexity
+
+* **Insertion:** O(n)
+* **Display:** O(n)
+
+## 🔗 15. Singly Linked List
+
+A Singly Linked List is a linear data structure where each node contains data and a pointer to the next node.
+
+This program creates a singly linked list by taking values from the user and inserting each node at the end of the list.
+
+**File:** `15_SinglyLinkedList.c`
+
+### Operations
+
+* Insert
+* Display
+
+### Time Complexity
+
+* **Insert at End:** O(n)
+* **Display:** O(n)
+
+## ➕ 15. Insertion in Array
+
+This program inserts a new element into an array at a position entered by the user.
+
+The elements after the specified position are shifted one position to the right to create space for the new element.
+
+**File:** `15_ArrayInsertion.c`
+
+### Operations
+
+* Enter array elements
+* Enter the position for insertion
+* Enter the element to insert
+* Display the updated array
+
+### Time Complexity
+
+* **Insertion:** O(n)
+* **Display:** O(n)
 
 ## ▶️ How to Run
 
@@ -301,8 +342,9 @@ DSA-in-C/
 ├── 10_CircularQueue.c
 ├── 11_InsertionSort.c
 ├── 12_MergeSort.c
-├── 13_SinglyLinkedList.c
-├── 14_DeletionFromArray.c
+├── 13_Deletionfromarray.c
+├── 14_InsertElementarray.c
+├── 15_SinglyLinkedList.c
 └── README.md
 ```
 
