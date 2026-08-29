@@ -1,6 +1,6 @@
 # 📚 Data Structures Practicals in C
 
-A collection of Data Structures and Algorithms practical programs implemented in C.
+A collection of **Data Structures and Algorithms practical programs implemented in C**.
 
 This repository is created for learning, practicing, and maintaining C programming practicals.
 
@@ -17,7 +17,7 @@ This repository is created for learning, practicing, and maintaining C programmi
 
 ## 📖 About
 
-This repository contains basic Data Structures and Algorithms programs in C.
+This repository contains basic **Data Structures and Algorithms programs in C**.
 
 The programs are written in a simple and beginner-friendly way to understand searching, sorting, arrays, and fundamental data structures.
 
@@ -26,6 +26,9 @@ The repository includes practical implementations of:
 * Searching Algorithms
 * Sorting Algorithms
 * Array Operations
+* Array Traversal
+* Array Sum
+* Merging Arrays
 * Basic Programming Problems
 * Fundamental Data Structures and Algorithms
 * Circular Queue
@@ -39,17 +42,20 @@ The repository includes practical implementations of:
 |       2 | Binary Search            | `02_BinarySearch.c`          |
 |       3 | Bubble Sort              | `03_BubbleSort.c`            |
 |       4 | Swap of Two Numbers      | `04_Swapoftwonumbers.c`      |
-|       5 | Find Minimum and Maximum | `05_find_min_max.c`          |
+|       5 | Find Minimum and Maximum | `05_Find_min_max.c`          |
 |       6 | Selection Sort           | `06_SelectionSort.c`         |
 |       7 | Reverse an Array         | `07_ReverseArray.c`          |
 |       8 | Find Duplicate Elements  | `08_FindDuplicateElements.c` |
-|       9 | Quick Sort               | `09_QuickSort.c`             |
+|       9 | Quick Sort               | `09_Quick_sort.c`            |
 |      10 | Circular Queue           | `10_CircularQueue.c`         |
 |      11 | Insertion Sort           | `11_InsertionSort.c`         |
-|      12 | Merge Sort               | `12_MergeSort.c`             |
-|      13 | Deletion from Array      | `13_DeletionFromArray.c`     |
-|      14 | Insertion in Array       | `14_InsertiElementarray.c`   |
-|      15 | Singly Linked List       | `15_SinglyLinkedList.c`      |
+|      12 | Merge Sort               | `12_MergeSort.C`             |
+|      13 | Deletion from Array      | `13_Deletionfromarray.c`     |
+|      14 | Insertion in Array       | `14_InsertElementarray.c`    |
+|      15 | Array Traversal          | `15_ArrayTraversal.c`        |
+|      16 | Sum of Array Elements    | `16_SumofArrayElements.c`    |
+|      17 | Merge Two Arrays         | `17_MergeTwoArrays.c`        |
+|      18 | Singly Linked List       | `17_SinglyLinkedList.c`      |
 
 ## 🔍 1. Linear Search
 
@@ -61,7 +67,7 @@ Linear Search checks each element of an array one by one until the required elem
 
 ## 🔎 2. Binary Search
 
-Binary Search is used to search for an element in a sorted array by repeatedly dividing the search range into two halves.
+Binary Search searches for an element in a sorted array by repeatedly dividing the search range into two halves.
 
 **File:** `02_BinarySearch.c`
 
@@ -87,7 +93,7 @@ This program demonstrates how to swap two numbers using a temporary variable.
 
 This program finds the minimum and maximum elements from an array.
 
-**File:** `05_find_min_max.c`
+**File:** `05_Find_min_max.c`
 
 **Time Complexity:** O(n)
 
@@ -119,7 +125,7 @@ This program identifies duplicate elements present in an array.
 
 Quick Sort is a divide-and-conquer sorting algorithm. It selects a pivot element and partitions the array around the pivot.
 
-**File:** `09_QuickSort.c`
+**File:** `09_Quick_sort.c`
 
 ### Quick Sort Complexity
 
@@ -151,7 +157,7 @@ It efficiently uses the available space by reusing positions after dequeue opera
 
 ## 📝 11. Insertion Sort
 
-Insertion Sort is a simple sorting algorithm that builds the sorted array one element at a time. Each element is compared with the elements before it and inserted into its correct position.
+Insertion Sort builds the sorted array one element at a time. Each element is compared with the elements before it and inserted into its correct position.
 
 **File:** `11_InsertionSort.c`
 
@@ -166,7 +172,7 @@ Insertion Sort is a simple sorting algorithm that builds the sorted array one el
 
 Merge Sort is a divide-and-conquer sorting algorithm. It divides the array into smaller subarrays, sorts them, and then merges them to produce a sorted array.
 
-**File:** `12_MergeSort.c`
+**File:** `12_MergeSort.C`
 
 ### Merge Sort Complexity
 
@@ -214,13 +220,71 @@ The elements after the specified position are shifted one position to the right 
 * **Insertion:** O(n)
 * **Display:** O(n)
 
-## 🔗 15. Singly Linked List
+## 📋 15. Array Traversal
+
+Array Traversal is the process of visiting and accessing each element of an array sequentially.
+
+This program demonstrates how to traverse an array and display all its elements.
+
+**File:** `15_ArrayTraversal.c`
+
+### Operations
+
+* Enter array elements
+* Traverse the array
+* Display all elements
+
+### Time Complexity
+
+* **Traversal:** O(n)
+
+## ➕ 16. Sum of Array Elements
+
+This program calculates the sum of all elements present in an array.
+
+Each element is accessed and added to a running sum.
+
+**File:** `16_SumofArrayElements.c`
+
+### Operations
+
+* Enter array elements
+* Calculate the sum
+* Display the sum
+
+### Time Complexity
+
+* **Calculate Sum:** O(n)
+
+## 🔀 17. Merge Two Arrays
+
+This program merges two arrays into a single array.
+
+The elements of the first and second arrays are copied into a new array to create the merged array.
+
+**File:** `17_MergeTwoArrays.c`
+
+### Operations
+
+* Enter elements of the first array
+* Enter elements of the second array
+* Merge both arrays
+* Display the merged array
+
+### Time Complexity
+
+* **Merge:** O(n + m)
+* **Display:** O(n + m)
+
+Where `n` is the size of the first array and `m` is the size of the second array.
+
+## 🔗 18. Singly Linked List
 
 A Singly Linked List is a linear data structure where each node contains data and a pointer to the next node.
 
 This program creates a singly linked list by taking values from the user and inserting each node at the end of the list.
 
-**File:** `15_SinglyLinkedList.c`
+**File:** `17_SinglyLinkedList.c`
 
 ### Operations
 
@@ -232,25 +296,28 @@ This program creates a singly linked list by taking values from the user and ins
 * **Insert at End:** O(n)
 * **Display:** O(n)
 
-## ➕ 15. Insertion in Array
+## ⏱️ Time Complexity
 
-This program inserts a new element into an array at a position entered by the user.
-
-The elements after the specified position are shifted one position to the right to create space for the new element.
-
-**File:** `15_ArrayInsertion.c`
-
-### Operations
-
-* Enter array elements
-* Enter the position for insertion
-* Enter the element to insert
-* Display the updated array
-
-### Time Complexity
-
-* **Insertion:** O(n)
-* **Display:** O(n)
+| **Algorithm / Operation** | **Time Complexity** |
+| ------------------------- | ------------------- |
+| Linear Search             | O(n)                |
+| Binary Search             | O(log n)            |
+| Bubble Sort               | O(n²)               |
+| Selection Sort            | O(n²)               |
+| Insertion Sort            | O(n²)               |
+| Merge Sort                | O(n log n)          |
+| Quick Sort                | O(n log n) Average  |
+| Find Minimum & Maximum    | O(n)                |
+| Reverse Array             | O(n)                |
+| Find Duplicate Elements   | O(n²)               |
+| Circular Queue Enqueue    | O(1)                |
+| Circular Queue Dequeue    | O(1)                |
+| Array Deletion            | O(n)                |
+| Array Insertion           | O(n)                |
+| Array Traversal           | O(n)                |
+| Sum of Array Elements     | O(n)                |
+| Merge Two Arrays          | O(n + m)            |
+| Linked List Insert at End | O(n)                |
 
 ## ▶️ How to Run
 
@@ -281,7 +348,7 @@ cd DSA-in-C
 For example:
 
 ```bash
-gcc 14_DeletionFromArray.c -o deletion
+gcc 17_MergeTwoArrays.c -o merge
 ```
 
 ### Run the Program
@@ -289,33 +356,14 @@ gcc 14_DeletionFromArray.c -o deletion
 **Windows:**
 
 ```bash
-deletion.exe
+merge.exe
 ```
 
 **Linux/macOS:**
 
 ```bash
-./deletion
+./merge
 ```
-
-## ⏱️ Time Complexity
-
-| **Algorithm / Operation** | **Time Complexity** |
-| ------------------------- | ------------------- |
-| Linear Search             | O(n)                |
-| Binary Search             | O(log n)            |
-| Bubble Sort               | O(n²)               |
-| Selection Sort            | O(n²)               |
-| Insertion Sort            | O(n²)               |
-| Merge Sort                | O(n log n)          |
-| Quick Sort                | O(n log n) Average  |
-| Find Minimum & Maximum    | O(n)                |
-| Reverse Array             | O(n)                |
-| Find Duplicate Elements   | O(n²)               |
-| Circular Queue Enqueue    | O(1)                |
-| Circular Queue Dequeue    | O(1)                |
-| Linked List Insert at End | O(n)                |
-| Array Deletion            | O(n)                |
 
 ## 📂 Repository Structure
 
@@ -326,19 +374,23 @@ DSA-in-C/
 ├── 02_BinarySearch.c
 ├── 03_BubbleSort.c
 ├── 04_Swapoftwonumbers.c
-├── 05_find_min_max.c
+├── 05_Find_min_max.c
 ├── 06_SelectionSort.c
 ├── 07_ReverseArray.c
 ├── 08_FindDuplicateElements.c
-├── 09_QuickSort.c
+├── 09_Quick_sort.c
 ├── 10_CircularQueue.c
 ├── 11_InsertionSort.c
-├── 12_MergeSort.c
+├── 12_MergeSort.C
 ├── 13_Deletionfromarray.c
 ├── 14_InsertElementarray.c
-├── 15_SinglyLinkedList.c
+├── 15_ArrayTraversal.c
+├── 16_SumofArrayElements.c
+├── 17_MergeTwoArrays.c
+├── 17_SinglyLinkedList.c
 └── README.md
 ```
+
 ## 🛠️ Technologies Used
 
 * C Programming
@@ -346,7 +398,7 @@ DSA-in-C/
 * Git
 * GitHub
 * Visual Studio Code
-  
+
 ## 🎯 Purpose
 
 The purpose of this repository is to:
