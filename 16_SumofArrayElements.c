@@ -1,4 +1,4 @@
-# Find Sum of Array Elements -
+# Find Sum of Array Elements 
 Code -
 #include <stdio.h>
 int main() {
