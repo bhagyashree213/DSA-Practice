@@ -49,15 +49,17 @@ The repository includes practical implementations of:
 |       8 | Find Duplicate Elements        | `08_FindDuplicateElements.c` |
 |       9 | Quick Sort                     | `09_Quick_sort.c`            |
 |      10 | Circular Queue                 | `10_CircularQueue.c`         |
-|      11 | Insertion Sort                 | `11_InsertionSort.c`         |
+|      11 | Insertion Sort                 | `11_InsertionSort.c`          |
 |      12 | Merge Sort                     | `12_MergeSort.C`             |
 |      13 | Deletion from Array            | `13_Deletionfromarray.c`     |
-|      14 | Insertion in Array             | `14_InsertElementarray.c`    |
+|      14 | Insertion in Array             | `14_InsertElementarray.c`     |
 |      15 | Array Traversal                | `15_ArrayTraversal.c`        |
 |      16 | Sum of Array Elements          | `16_SumofArrayElements.c`    |
 |      17 | Merge Two Arrays               | `17_MergeTwoArrays.c`        |
 |      18 | Find Average of Array Elements | `18_FindAverageArray.c`      |
-|      19 | Singly Linked List             | `19_SinglyLinkedList.c`      |
+|      19 | Copy an Array                  | `19_CopyArray.c`             |
+|      20 | Singly Linked List             | `20_SinglyLinkedList.c`      |
+
 
 ## 🔍 1. Linear Search
 
@@ -303,13 +305,37 @@ The sum of all array elements is calculated first, and then the sum is divided b
 
 * **O(n)**
 
-## 🔗 19. Singly Linked List
+## 📋 19. Copy an Array
+
+This program copies all elements from one array into another array.
+
+The original array remains unchanged, while each element is copied to the corresponding position in the new array.
+
+**File:** `19_CopyArray.c`
+
+### Operations
+
+* Enter array elements
+* Copy the array
+* Display the original array
+* Display the copied array
+
+### Time Complexity
+
+* **Copy Array:** O(n)
+
+### Space Complexity
+
+* **O(n)**
+  
+
+## 🔗 20. Singly Linked List
 
 A Singly Linked List is a linear data structure where each node contains data and a pointer to the next node.
 
 This program creates a singly linked list by taking values from the user and inserting each node at the end of the list.
 
-**File:** `19_SinglyLinkedList.c`
+**File:** `20_SinglyLinkedList.c`
 
 ### Operations
 
@@ -343,6 +369,7 @@ This program creates a singly linked list by taking values from the user and ins
 | Sum of Array Elements          | O(n)                |
 | Merge Two Arrays               | O(n + m)            |
 | Find Average of Array Elements | O(n)                |
+| Copy Array                     | O(n)                |
 | Linked List Insert at End      | O(n)                |
 | Linked List Display            | O(n)                |
 
@@ -415,7 +442,8 @@ DSA-in-C/
 ├── 16_SumofArrayElements.c
 ├── 17_MergeTwoArrays.c
 ├── 18_FindAverageArray.c
-├── 19_SinglyLinkedList.c
+├── 19_CopyArray.c
+├── 20_SinglyLinkedList.c
 └── README.md
 ```
 
