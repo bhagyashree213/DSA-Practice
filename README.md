@@ -30,6 +30,7 @@ The repository includes practical implementations of:
 * Array Sum
 * Array Average
 * Merging Arrays
+* Finding Missing Elements
 * Basic Programming Problems
 * Fundamental Data Structures and Algorithms
 * Circular Queue
@@ -49,17 +50,19 @@ The repository includes practical implementations of:
 |       8 | Find Duplicate Elements        | `08_FindDuplicateElements.c` |
 |       9 | Quick Sort                     | `09_Quick_sort.c`            |
 |      10 | Circular Queue                 | `10_CircularQueue.c`         |
-|      11 | Insertion Sort                 | `11_InsertionSort.c`          |
+|      11 | Insertion Sort                 | `11_InsertionSort.c`         |
 |      12 | Merge Sort                     | `12_MergeSort.C`             |
 |      13 | Deletion from Array            | `13_Deletionfromarray.c`     |
-|      14 | Insertion in Array             | `14_InsertElementarray.c`     |
+|      14 | Insertion in Array             | `14_InsertElementarray.c`    |
 |      15 | Array Traversal                | `15_ArrayTraversal.c`        |
 |      16 | Sum of Array Elements          | `16_SumofArrayElements.c`    |
 |      17 | Merge Two Arrays               | `17_MergeTwoArrays.c`        |
 |      18 | Find Average of Array Elements | `18_FindAverageArray.c`      |
 |      19 | Copy an Array                  | `19_CopyArray.c`             |
-|      20 | Singly Linked List             | `20_SinglyLinkedList.c`      |
+|      20 | Find Missing Element           | `20_FindMissingElement.c`    |
+|      21 | Singly Linked List             | `21_SinglyLinkedList.c`      |
 
+---
 
 ## 🔍 1. Linear Search
 
@@ -327,15 +330,38 @@ The original array remains unchanged, while each element is copied to the corres
 ### Space Complexity
 
 * **O(n)**
-  
 
-## 🔗 20. Singly Linked List
+## 🔍 20. Find Missing Element
+
+This program finds the missing element from an array containing numbers from `1` to `N`, where one number is missing.
+
+The program calculates the expected sum of numbers from `1` to `N` and subtracts the actual sum of the array elements to find the missing element.
+
+**File:** `20_FindMissingElement.c`
+
+### Operations
+
+* Enter the number of elements
+* Enter the array elements
+* Calculate the expected sum
+* Find the missing element
+* Display the missing element
+
+### Time Complexity
+
+* **Find Missing Element:** O(n)
+
+### Space Complexity
+
+* **O(n)**
+
+## 🔗 21. Singly Linked List
 
 A Singly Linked List is a linear data structure where each node contains data and a pointer to the next node.
 
 This program creates a singly linked list by taking values from the user and inserting each node at the end of the list.
 
-**File:** `20_SinglyLinkedList.c`
+**File:** `21_SinglyLinkedList.c`
 
 ### Operations
 
@@ -370,6 +396,7 @@ This program creates a singly linked list by taking values from the user and ins
 | Merge Two Arrays               | O(n + m)            |
 | Find Average of Array Elements | O(n)                |
 | Copy Array                     | O(n)                |
+| Find Missing Element           | O(n)                |
 | Linked List Insert at End      | O(n)                |
 | Linked List Display            | O(n)                |
 
@@ -402,7 +429,7 @@ cd DSA-in-C
 For example:
 
 ```bash
-gcc 18_FindAverageArray.c -o average
+gcc 20_FindMissingElement.c -o missing
 ```
 
 ### Run the Program
@@ -410,13 +437,13 @@ gcc 18_FindAverageArray.c -o average
 **Windows:**
 
 ```bash
-average.exe
+missing.exe
 ```
 
 **Linux/macOS:**
 
 ```bash
-./average
+./missing
 ```
 
 ## 📂 Repository Structure
@@ -443,7 +470,8 @@ DSA-in-C/
 ├── 17_MergeTwoArrays.c
 ├── 18_FindAverageArray.c
 ├── 19_CopyArray.c
-├── 20_SinglyLinkedList.c
+├── 20_FindMissingElement.c
+├── 21_SinglyLinkedList.c
 └── README.md
 ```
 
