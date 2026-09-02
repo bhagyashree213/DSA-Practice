@@ -1,4 +1,4 @@
-#Merge Sort -
+#Merge Sort 
 Code -
 #include <stdio.h>
 void merge(int a[], int low, int mid, int high)
