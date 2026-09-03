@@ -33,6 +33,7 @@ The repository includes practical implementations of:
 * Merging Arrays
 * Finding Missing Elements
 * Counting Even and Odd Elements
+* Counting Positive and Negative Elements
 * Basic Programming Problems
 * Circular Queue
 * Singly Linked List
@@ -41,30 +42,31 @@ The repository includes practical implementations of:
 
 ## 📚 Practicals
 
-| **No.** | **Practical**                  | **File**                     |
-| ------: | ------------------------------ | ---------------------------- |
-|       1 | Linear Search                  | `01_LinearSearch.c`          |
-|       2 | Binary Search                  | `02_BinarySearch.c`          |
-|       3 | Bubble Sort                    | `03_BubbleSort.c`            |
-|       4 | Swap of Two Numbers            | `04_Swapoftwonumbers.c`      |
-|       5 | Find Minimum and Maximum       | `05_Find_min_max.c`          |
-|       6 | Selection Sort                 | `06_SelectionSort.c`         |
-|       7 | Reverse an Array               | `07_ReverseArray.c`          |
-|       8 | Find Duplicate Elements        | `08_FindDuplicateElements.c` |
-|       9 | Quick Sort                     | `09_Quick_sort.c`            |
-|      10 | Circular Queue                 | `10_CircularQueue.c`         |
-|      11 | Insertion Sort                 | `11_InsertionSort.c`         |
-|      12 | Merge Sort                     | `12_MergeSort.C`             |
-|      13 | Deletion from Array            | `13_Deletionfromarray.c`     |
-|      14 | Insertion in Array             | `14_InsertElementarray.c`    |
-|      15 | Array Traversal                | `15_ArrayTraversal.c`        |
-|      16 | Sum of Array Elements          | `16_SumofArrayElements.c`    |
-|      17 | Merge Two Arrays               | `17_MergeTwoArrays.c`        |
-|      18 | Find Average of Array Elements | `18_FindAverageArray.c`      |
-|      19 | Copy an Array                  | `19_CopyArray.c`             |
-|      20 | Find Missing Element           | `20_FindMissingElement.c`    |
-|      21 | Count Even and Odd Elements    | `21_CountEvenOdd.c`          |
-|      22 | Singly Linked List             | `22_SinglyLinkedList.c`      |
+| **No.** | **Practical**                        | **File**                             |
+| ------: | ------------------------------------ | ------------------------------------ |
+|       1 | Linear Search                        | `01_LinearSearch.c`                  |
+|       2 | Binary Search                        | `02_BinarySearch.c`                  |
+|       3 | Bubble Sort                          | `03_BubbleSort.c`                    |
+|       4 | Swap of Two Numbers                  | `04_Swapoftwonumbers.c`              |
+|       5 | Find Minimum and Maximum             | `05_Find_min_max.c`                  |
+|       6 | Selection Sort                       | `06_SelectionSort.c`                 |
+|       7 | Reverse an Array                     | `07_ReverseArray.c`                  |
+|       8 | Find Duplicate Elements              | `08_FindDuplicateElements.c`         |
+|       9 | Quick Sort                           | `09_Quick_sort.c`                    |
+|      10 | Circular Queue                       | `10_CircularQueue.c`                 |
+|      11 | Insertion Sort                       | `11_InsertionSort.c`                 |
+|      12 | Merge Sort                           | `12_MergeSort.C`                     |
+|      13 | Deletion from Array                  | `13_Deletionfromarray.c`             |
+|      14 | Insertion in Array                   | `14_InsertElementarray.c`            |
+|      15 | Array Traversal                      | `15_ArrayTraversal.c`                |
+|      16 | Sum of Array Elements                | `16_SumofArrayElements.c`            |
+|      17 | Merge Two Arrays                     | `17_MergeTwoArrays.c`                |
+|      18 | Find Average of Array Elements       | `18_FindAverageArray.c`              |
+|      19 | Copy an Array                        | `19_CopyArray.c`                     |
+|      20 | Find Missing Element                 | `20_FindMissingElement.c`            |
+|      21 | Count Even and Odd Elements          | `21_CountEvenOdd.c`                  |
+|      22 | Count Positive and Negative Elements | `22_CountPositiveNegativeElements.c` |
+|      23 | Singly Linked List                   | `23_SinglyLinkedList.c`              |
 
 ---
 
@@ -421,13 +423,41 @@ An element is even if it is completely divisible by `2`; otherwise, it is odd.
 
 ---
 
-## 🔗 22. Singly Linked List
+## ➕➖ 22. Count Positive and Negative Elements
+
+This program counts the number of **positive and negative elements** present in an array.
+
+A number greater than `0` is considered positive, while a number less than `0` is considered negative.
+
+The value `0` is neither positive nor negative, so it is not counted.
+
+**File:** `22_CountPositiveNegativeElements.c`
+
+### Operations
+
+* Enter array elements
+* Check each element
+* Count positive elements
+* Count negative elements
+* Display the counts
+
+### Time Complexity
+
+**O(n)**
+
+### Space Complexity
+
+**O(1)**
+
+---
+
+## 🔗 23. Singly Linked List
 
 A Singly Linked List is a linear data structure where each node contains data and a pointer to the next node.
 
 This program creates a singly linked list by taking values from the user and inserting each node at the end of the list.
 
-**File:** `22_SinglyLinkedList.c`
+**File:** `23_SinglyLinkedList.c`
 
 ### Operations
 
@@ -466,6 +496,7 @@ This program creates a singly linked list by taking values from the user and ins
 | Copy Array                     | O(n)                |
 | Find Missing Element           | O(n)                |
 | Count Even and Odd             | O(n)                |
+| Count Positive and Negative    | O(n)                |
 | Linked List Insert at End      | O(n)                |
 | Linked List Display            | O(n)                |
 
@@ -500,7 +531,7 @@ cd DSA-in-C
 For example:
 
 ```bash
-gcc 21_CountEvenOdd.c -o evenodd
+gcc 22_CountPositiveNegativeElements.c -o positive_negative
 ```
 
 ### Run the Program
@@ -508,13 +539,13 @@ gcc 21_CountEvenOdd.c -o evenodd
 **Windows:**
 
 ```bash
-evenodd.exe
+positive_negative.exe
 ```
 
 **Linux/macOS:**
 
 ```bash
-./evenodd
+./positive_negative
 ```
 
 ---
@@ -545,7 +576,8 @@ DSA-in-C/
 ├── 19_CopyArray.c
 ├── 20_FindMissingElement.c
 ├── 21_CountEvenOdd.c
-├── 22_SinglyLinkedList.c
+├── 22_CountPositiveNegativeElements.c
+├── 23_SinglyLinkedList.c
 └── README.md
 ```
 
