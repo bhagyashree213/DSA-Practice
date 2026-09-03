@@ -29,12 +29,15 @@ The repository includes practical implementations of:
 * Array Traversal
 * Array Sum
 * Array Average
+* Array Copying
 * Merging Arrays
 * Finding Missing Elements
+* Counting Even and Odd Elements
 * Basic Programming Problems
-* Fundamental Data Structures and Algorithms
 * Circular Queue
 * Singly Linked List
+
+---
 
 ## 📚 Practicals
 
@@ -60,7 +63,8 @@ The repository includes practical implementations of:
 |      18 | Find Average of Array Elements | `18_FindAverageArray.c`      |
 |      19 | Copy an Array                  | `19_CopyArray.c`             |
 |      20 | Find Missing Element           | `20_FindMissingElement.c`    |
-|      21 | Singly Linked List             | `21_SinglyLinkedList.c`      |
+|      21 | Count Even and Odd Elements    | `21_CountEvenOdd.c`          |
+|      22 | Singly Linked List             | `22_SinglyLinkedList.c`      |
 
 ---
 
@@ -72,6 +76,8 @@ Linear Search checks each element of an array one by one until the required elem
 
 **Time Complexity:** O(n)
 
+---
+
 ## 🔎 2. Binary Search
 
 Binary Search searches for an element in a sorted array by repeatedly dividing the search range into two halves.
@@ -79,6 +85,8 @@ Binary Search searches for an element in a sorted array by repeatedly dividing t
 **File:** `02_BinarySearch.c`
 
 **Time Complexity:** O(log n)
+
+---
 
 ## 🫧 3. Bubble Sort
 
@@ -88,6 +96,8 @@ Bubble Sort repeatedly compares adjacent elements and swaps them if they are in 
 
 **Time Complexity:** O(n²)
 
+---
+
 ## 🔄 4. Swap of Two Numbers
 
 This program demonstrates how to swap two numbers using a temporary variable.
@@ -95,6 +105,8 @@ This program demonstrates how to swap two numbers using a temporary variable.
 **File:** `04_Swapoftwonumbers.c`
 
 **Time Complexity:** O(1)
+
+---
 
 ## 📉 5. Find Minimum and Maximum
 
@@ -104,6 +116,8 @@ This program finds the minimum and maximum elements from an array.
 
 **Time Complexity:** O(n)
 
+---
+
 ## 🎯 6. Selection Sort
 
 Selection Sort repeatedly finds the smallest element from the unsorted portion and places it in the correct position.
@@ -111,6 +125,8 @@ Selection Sort repeatedly finds the smallest element from the unsorted portion a
 **File:** `06_SelectionSort.c`
 
 **Time Complexity:** O(n²)
+
+---
 
 ## 🔃 7. Reverse an Array
 
@@ -120,6 +136,8 @@ This program reverses the elements of an array by swapping elements from both en
 
 **Time Complexity:** O(n)
 
+---
+
 ## 🔁 8. Find Duplicate Elements
 
 This program identifies duplicate elements present in an array.
@@ -127,6 +145,8 @@ This program identifies duplicate elements present in an array.
 **File:** `08_FindDuplicateElements.c`
 
 **Time Complexity:** O(n²)
+
+---
 
 ## ⚡ 9. Quick Sort
 
@@ -140,6 +160,8 @@ Quick Sort is a divide-and-conquer sorting algorithm. It selects a pivot element
 * **Average Case:** O(n log n)
 * **Worst Case:** O(n²)
 * **Average Space Complexity:** O(log n)
+
+---
 
 ## 🔄 10. Circular Queue
 
@@ -162,6 +184,8 @@ It efficiently uses the available space by reusing positions after dequeue opera
 * **Dequeue:** O(1)
 * **Display:** O(n)
 
+---
+
 ## 📝 11. Insertion Sort
 
 Insertion Sort builds the sorted array one element at a time. Each element is compared with the elements before it and inserted into its correct position.
@@ -175,6 +199,8 @@ Insertion Sort builds the sorted array one element at a time. Each element is co
 * **Worst Case:** O(n²)
 * **Space Complexity:** O(1)
 
+---
+
 ## 🔀 12. Merge Sort
 
 Merge Sort is a divide-and-conquer sorting algorithm. It divides the array into smaller subarrays, sorts them, and then merges them to produce a sorted array.
@@ -187,6 +213,8 @@ Merge Sort is a divide-and-conquer sorting algorithm. It divides the array into 
 * **Average Case:** O(n log n)
 * **Worst Case:** O(n log n)
 * **Space Complexity:** O(n)
+
+---
 
 ## 🗑️ 13. Deletion from Array
 
@@ -206,6 +234,8 @@ After deletion, the remaining elements are shifted one position to the left to f
 
 * **Deletion:** O(n)
 * **Display:** O(n)
+
+---
 
 ## ➕ 14. Insertion in Array
 
@@ -227,6 +257,8 @@ The elements after the specified position are shifted one position to the right 
 * **Insertion:** O(n)
 * **Display:** O(n)
 
+---
+
 ## 📋 15. Array Traversal
 
 Array Traversal is the process of visiting and accessing each element of an array sequentially.
@@ -241,9 +273,9 @@ This program demonstrates how to traverse an array and display all its elements.
 * Traverse the array
 * Display all elements
 
-### Time Complexity
+**Time Complexity:** O(n)
 
-* **Traversal:** O(n)
+---
 
 ## ➕ 16. Sum of Array Elements
 
@@ -259,9 +291,9 @@ Each element is accessed and added to a running sum.
 * Calculate the sum
 * Display the sum
 
-### Time Complexity
+**Time Complexity:** O(n)
 
-* **Calculate Sum:** O(n)
+---
 
 ## 🔀 17. Merge Two Arrays
 
@@ -285,6 +317,8 @@ The elements of the first and second arrays are copied into a new array to creat
 
 Where `n` is the size of the first array and `m` is the size of the second array.
 
+---
+
 ## 📊 18. Find Average of Array Elements
 
 This program calculates the average of all elements present in an array.
@@ -302,11 +336,13 @@ The sum of all array elements is calculated first, and then the sum is divided b
 
 ### Time Complexity
 
-* **Calculate Average:** O(n)
+**O(n)**
 
 ### Space Complexity
 
-* **O(n)**
+**O(1)**
+
+---
 
 ## 📋 19. Copy an Array
 
@@ -325,11 +361,13 @@ The original array remains unchanged, while each element is copied to the corres
 
 ### Time Complexity
 
-* **Copy Array:** O(n)
+**O(n)**
 
 ### Space Complexity
 
-* **O(n)**
+**O(n)**
+
+---
 
 ## 🔍 20. Find Missing Element
 
@@ -349,19 +387,47 @@ The program calculates the expected sum of numbers from `1` to `N` and subtracts
 
 ### Time Complexity
 
-* **Find Missing Element:** O(n)
+**O(n)**
 
 ### Space Complexity
 
-* **O(n)**
+**O(1)**
 
-## 🔗 21. Singly Linked List
+---
+
+## 🔢 21. Count Even and Odd Elements
+
+This program counts the number of **even and odd elements** present in an array.
+
+An element is even if it is completely divisible by `2`; otherwise, it is odd.
+
+**File:** `21_CountEvenOdd.c`
+
+### Operations
+
+* Enter array elements
+* Check each element
+* Count even elements
+* Count odd elements
+* Display the counts
+
+### Time Complexity
+
+**O(n)**
+
+### Space Complexity
+
+**O(1)**
+
+---
+
+## 🔗 22. Singly Linked List
 
 A Singly Linked List is a linear data structure where each node contains data and a pointer to the next node.
 
 This program creates a singly linked list by taking values from the user and inserting each node at the end of the list.
 
-**File:** `21_SinglyLinkedList.c`
+**File:** `22_SinglyLinkedList.c`
 
 ### Operations
 
@@ -372,6 +438,8 @@ This program creates a singly linked list by taking values from the user and ins
 
 * **Insert at End:** O(n)
 * **Display:** O(n)
+
+---
 
 ## ⏱️ Time Complexity
 
@@ -397,8 +465,11 @@ This program creates a singly linked list by taking values from the user and ins
 | Find Average of Array Elements | O(n)                |
 | Copy Array                     | O(n)                |
 | Find Missing Element           | O(n)                |
+| Count Even and Odd             | O(n)                |
 | Linked List Insert at End      | O(n)                |
 | Linked List Display            | O(n)                |
+
+---
 
 ## ▶️ How to Run
 
@@ -429,7 +500,7 @@ cd DSA-in-C
 For example:
 
 ```bash
-gcc 20_FindMissingElement.c -o missing
+gcc 21_CountEvenOdd.c -o evenodd
 ```
 
 ### Run the Program
@@ -437,14 +508,16 @@ gcc 20_FindMissingElement.c -o missing
 **Windows:**
 
 ```bash
-missing.exe
+evenodd.exe
 ```
 
 **Linux/macOS:**
 
 ```bash
-./missing
+./evenodd
 ```
+
+---
 
 ## 📂 Repository Structure
 
@@ -471,17 +544,22 @@ DSA-in-C/
 ├── 18_FindAverageArray.c
 ├── 19_CopyArray.c
 ├── 20_FindMissingElement.c
-├── 21_SinglyLinkedList.c
+├── 21_CountEvenOdd.c
+├── 22_SinglyLinkedList.c
 └── README.md
 ```
 
+---
+
 ## 🛠️ Technologies Used
 
-* C Programming
-* GCC Compiler
-* Git
-* GitHub
-* Visual Studio Code
+* **C Programming**
+* **GCC Compiler**
+* **Git**
+* **GitHub**
+* **Visual Studio Code**
+
+---
 
 ## 🎯 Purpose
 
@@ -493,6 +571,8 @@ The purpose of this repository is to:
 * Build a collection of DSA practical programs
 * Improve problem-solving and programming skills
 * Maintain practical programs for academic and interview preparation
+
+---
 
 ## 👩‍💻 Author
 
