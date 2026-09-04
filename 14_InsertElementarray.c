@@ -1,5 +1,5 @@
 #Insert Elements in Array
-Code -
+Code - 
 #include <stdio.h>
 int main() {
     int arr[100], n, pos, value;
