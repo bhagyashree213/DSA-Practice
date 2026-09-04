@@ -66,7 +66,8 @@ The repository includes practical implementations of:
 |      20 | Find Missing Element                 | `20_FindMissingElement.c`            |
 |      21 | Count Even and Odd Elements          | `21_CountEvenOdd.c`                  |
 |      22 | Count Positive and Negative Elements | `22_CountPositiveNegativeElements.c` |
-|      23 | Singly Linked List                   | `23_SinglyLinkedList.c`              |
+|      23 | Left Rotate an Array                 | `23_LeftRotateanArray.c`             |
+|      24 | Singly Linked List                   | `24_SinglyLinkedList.c`              |
 
 ---
 
@@ -450,14 +451,28 @@ The value `0` is neither positive nor negative, so it is not counted.
 **O(1)**
 
 ---
+## 🔄 23. Left Rotate an Array
 
-## 🔗 23. Singly Linked List
+This program performs a left rotation on an array by one position.
+
+In a left rotation, the first element of the array is moved to the last position, while all other elements are shifted one position to the left.
+
+**File:** `23_LeftRotateanArray.c`
+
+### Example
+
+For an array:
+
+```text
+10 20 30 40 50
+
+## 🔗 24. Singly Linked List
 
 A Singly Linked List is a linear data structure where each node contains data and a pointer to the next node.
 
 This program creates a singly linked list by taking values from the user and inserting each node at the end of the list.
 
-**File:** `23_SinglyLinkedList.c`
+**File:** `24_SinglyLinkedList.c`
 
 ### Operations
 
@@ -497,6 +512,7 @@ This program creates a singly linked list by taking values from the user and ins
 | Find Missing Element           | O(n)                |
 | Count Even and Odd             | O(n)                |
 | Count Positive and Negative    | O(n)                |
+| Left Rotate an Array           | O(n)                |
 | Linked List Insert at End      | O(n)                |
 | Linked List Display            | O(n)                |
 
@@ -577,7 +593,8 @@ DSA-in-C/
 ├── 20_FindMissingElement.c
 ├── 21_CountEvenOdd.c
 ├── 22_CountPositiveNegativeElements.c
-├── 23_SinglyLinkedList.c
+├── 23_LeftRotateanArray.c
+├── 24_SinglyLinkedList.c
 └── README.md
 ```
 
