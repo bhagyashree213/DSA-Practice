@@ -8,18 +8,20 @@ This repository is created for learning, practicing, and maintaining C programmi
 
 * [About](#-about)
 * [Practicals](#-practicals)
-* [Technologies Used](#️-technologies-used)
-* [How to Run](#️-how-to-run)
 * [Time Complexity](#-time-complexity)
+* [How to Run](#️-how-to-run)
 * [Repository Structure](#-repository-structure)
+* [Technologies Used](#️-technologies-used)
 * [Purpose](#-purpose)
 * [Author](#-author)
+
+---
 
 ## 📖 About
 
 This repository contains basic **Data Structures and Algorithms programs in C**.
 
-The programs are written in a simple and beginner-friendly way to understand searching, sorting, arrays, and fundamental data structures.
+The programs are written in a simple and beginner-friendly way to understand searching, sorting, arrays, queues, and linked lists.
 
 The repository includes practical implementations of:
 
@@ -27,16 +29,17 @@ The repository includes practical implementations of:
 * Sorting Algorithms
 * Array Operations
 * Array Traversal
-* Array Sum
-* Array Average
+* Array Sum and Average
 * Array Copying
 * Merging Arrays
+* Array Rotation
 * Finding Missing Elements
+* Finding Duplicate Elements
 * Counting Even and Odd Elements
 * Counting Positive and Negative Elements
-* Basic Programming Problems
 * Circular Queue
 * Singly Linked List
+* Basic Programming Problems
 
 ---
 
@@ -67,7 +70,8 @@ The repository includes practical implementations of:
 |      21 | Count Even and Odd Elements          | `21_CountEvenOdd.c`                  |
 |      22 | Count Positive and Negative Elements | `22_CountPositiveNegativeElements.c` |
 |      23 | Left Rotate an Array                 | `23_LeftRotateanArray.c`             |
-|      24 | Singly Linked List                   | `24_SinglyLinkedList.c`              |
+|      24 | Right Rotate an Array                | `24_RightRotateanArray.c`            |
+|      25 | Singly Linked List                   | `25_SinglyLinkedList.c`              |
 
 ---
 
@@ -330,13 +334,6 @@ The sum of all array elements is calculated first, and then the sum is divided b
 
 **File:** `18_FindAverageArray.c`
 
-### Operations
-
-* Enter array elements
-* Calculate the sum
-* Calculate the average
-* Display the average
-
 ### Time Complexity
 
 **O(n)**
@@ -354,13 +351,6 @@ This program copies all elements from one array into another array.
 The original array remains unchanged, while each element is copied to the corresponding position in the new array.
 
 **File:** `19_CopyArray.c`
-
-### Operations
-
-* Enter array elements
-* Copy the array
-* Display the original array
-* Display the copied array
 
 ### Time Complexity
 
@@ -380,14 +370,6 @@ The program calculates the expected sum of numbers from `1` to `N` and subtracts
 
 **File:** `20_FindMissingElement.c`
 
-### Operations
-
-* Enter the number of elements
-* Enter the array elements
-* Calculate the expected sum
-* Find the missing element
-* Display the missing element
-
 ### Time Complexity
 
 **O(n)**
@@ -405,14 +387,6 @@ This program counts the number of **even and odd elements** present in an array.
 An element is even if it is completely divisible by `2`; otherwise, it is odd.
 
 **File:** `21_CountEvenOdd.c`
-
-### Operations
-
-* Enter array elements
-* Check each element
-* Count even elements
-* Count odd elements
-* Display the counts
 
 ### Time Complexity
 
@@ -434,14 +408,6 @@ The value `0` is neither positive nor negative, so it is not counted.
 
 **File:** `22_CountPositiveNegativeElements.c`
 
-### Operations
-
-* Enter array elements
-* Check each element
-* Count positive elements
-* Count negative elements
-* Display the counts
-
 ### Time Complexity
 
 **O(n)**
@@ -451,7 +417,8 @@ The value `0` is neither positive nor negative, so it is not counted.
 **O(1)**
 
 ---
-## 🔄 23. Left Rotate an Array
+
+## ⬅️ 23. Left Rotate an Array
 
 This program performs a left rotation on an array by one position.
 
@@ -465,14 +432,63 @@ For an array:
 
 ```text
 10 20 30 40 50
+```
 
-## 🔗 24. Singly Linked List
+After one left rotation:
+
+```text
+20 30 40 50 10
+```
+
+### Time Complexity
+
+**O(n)**
+
+### Space Complexity
+
+**O(1)**
+
+---
+
+## ➡️ 24. Right Rotate an Array
+
+This program performs a right rotation on an array by one position.
+
+In a right rotation, the last element of the array is moved to the first position, while all other elements are shifted one position to the right.
+
+**File:** `24_RightRotateanArray.c`
+
+### Example
+
+For an array:
+
+```text
+10 20 30 40 50
+```
+
+After one right rotation:
+
+```text
+50 10 20 30 40
+```
+
+### Time Complexity
+
+**O(n)**
+
+### Space Complexity
+
+**O(1)**
+
+---
+
+## 🔗 25. Singly Linked List
 
 A Singly Linked List is a linear data structure where each node contains data and a pointer to the next node.
 
 This program creates a singly linked list by taking values from the user and inserting each node at the end of the list.
 
-**File:** `24_SinglyLinkedList.c`
+**File:** `25_SinglyLinkedList.c`
 
 ### Operations
 
@@ -513,6 +529,7 @@ This program creates a singly linked list by taking values from the user and ins
 | Count Even and Odd             | O(n)                |
 | Count Positive and Negative    | O(n)                |
 | Left Rotate an Array           | O(n)                |
+| Right Rotate an Array          | O(n)                |
 | Linked List Insert at End      | O(n)                |
 | Linked List Display            | O(n)                |
 
@@ -547,7 +564,7 @@ cd DSA-in-C
 For example:
 
 ```bash
-gcc 22_CountPositiveNegativeElements.c -o positive_negative
+gcc 24_RightRotateanArray.c -o right_rotate
 ```
 
 ### Run the Program
@@ -555,13 +572,13 @@ gcc 22_CountPositiveNegativeElements.c -o positive_negative
 **Windows:**
 
 ```bash
-positive_negative.exe
+right_rotate.exe
 ```
 
 **Linux/macOS:**
 
 ```bash
-./positive_negative
+./right_rotate
 ```
 
 ---
@@ -594,7 +611,8 @@ DSA-in-C/
 ├── 21_CountEvenOdd.c
 ├── 22_CountPositiveNegativeElements.c
 ├── 23_LeftRotateanArray.c
-├── 24_SinglyLinkedList.c
+├── 24_RightRotateanArray.c
+├── 25_SinglyLinkedList.c
 └── README.md
 ```
 
