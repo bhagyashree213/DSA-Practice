@@ -484,9 +484,9 @@ After one right rotation:
 ---
 ## 🥈 25. Second Largest Element
 
-This program finds the **second largest element** in an array using a single traversal.
+This program finds the **second largest element** in an array.
 
-The program keeps track of the largest and second largest elements while traversing the array.
+The program identifies the largest and second largest distinct elements while traversing the array.
 
 **File:** `25_SecondLargestElement.c`
 
@@ -496,16 +496,23 @@ For an array:
 
 ```text
 10 25 8 40 15
-The largest element is 40 and the second largest element is 25.
+```
 
+The largest element is `40` and the second largest element is `25`.
+
+```text
 Second largest element = 25
-Time Complexity
+```
 
-O(n)
+### Time Complexity
 
-Space Complexity
+**O(n)**
 
-O(1)
+### Space Complexity
+
+**O(1)**
+
+---
 
 ## 🔗 26. Singly Linked List
 
