@@ -71,7 +71,8 @@ The repository includes practical implementations of:
 |      22 | Count Positive and Negative Elements | `22_CountPositiveNegativeElements.c` |
 |      23 | Left Rotate an Array                 | `23_LeftRotateanArray.c`             |
 |      24 | Right Rotate an Array                | `24_RightRotateanArray.c`            |
-|      25 | Singly Linked List                   | `25_SinglyLinkedList.c`              |
+|      25 | Second Largest Element             | `25_SecondLargestElement.c`         |
+|      26 | Singly Linked List                   | `26_SinglyLinkedList.c`              |
 
 ---
 
@@ -481,14 +482,38 @@ After one right rotation:
 **O(1)**
 
 ---
+## 🥈 25. Second Largest Element
 
-## 🔗 25. Singly Linked List
+This program finds the **second largest element** in an array using a single traversal.
+
+The program keeps track of the largest and second largest elements while traversing the array.
+
+**File:** `25_SecondLargestElement.c`
+
+### Example
+
+For an array:
+
+```text
+10 25 8 40 15
+The largest element is 40 and the second largest element is 25.
+
+Second largest element = 25
+Time Complexity
+
+O(n)
+
+Space Complexity
+
+O(1)
+
+## 🔗 26. Singly Linked List
 
 A Singly Linked List is a linear data structure where each node contains data and a pointer to the next node.
 
 This program creates a singly linked list by taking values from the user and inserting each node at the end of the list.
 
-**File:** `25_SinglyLinkedList.c`
+**File:** `26_SinglyLinkedList.c`
 
 ### Operations
 
@@ -530,6 +555,7 @@ This program creates a singly linked list by taking values from the user and ins
 | Count Positive and Negative    | O(n)                |
 | Left Rotate an Array           | O(n)                |
 | Right Rotate an Array          | O(n)                |
+| Second Largest Element         | O(n)                |
 | Linked List Insert at End      | O(n)                |
 | Linked List Display            | O(n)                |
 
@@ -612,7 +638,8 @@ DSA-in-C/
 ├── 22_CountPositiveNegativeElements.c
 ├── 23_LeftRotateanArray.c
 ├── 24_RightRotateanArray.c
-├── 25_SinglyLinkedList.c
+├── 25_SecondLargestElement.c
+├── 26_SinglyLinkedList.c
 └── README.md
 ```
 
