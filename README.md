@@ -35,6 +35,8 @@ The repository includes practical implementations of:
 * Array Rotation
 * Finding Missing Elements
 * Finding Duplicate Elements
+* Finding Minimum and Maximum Elements
+* Finding Second Largest and Second Smallest Elements
 * Counting Even and Odd Elements
 * Counting Positive and Negative Elements
 * Circular Queue
@@ -71,8 +73,9 @@ The repository includes practical implementations of:
 |      22 | Count Positive and Negative Elements | `22_CountPositiveNegativeElements.c` |
 |      23 | Left Rotate an Array                 | `23_LeftRotateanArray.c`             |
 |      24 | Right Rotate an Array                | `24_RightRotateanArray.c`            |
-|      25 | Second Largest Element             | `25_SecondLargestElement.c`         |
-|      26 | Singly Linked List                   | `26_SinglyLinkedList.c`              |
+|      25 | Second Largest Element               | `25_SecondLargestElement.c`          |
+|      26 | Second Smallest Element              | `26_SecondSmallestElement.c`         |
+|      27 | Singly Linked List                   | `27_SinglyLinkedList.c`              |
 
 ---
 
@@ -275,12 +278,6 @@ This program demonstrates how to traverse an array and display all its elements.
 
 **File:** `15_ArrayTraversal.c`
 
-### Operations
-
-* Enter array elements
-* Traverse the array
-* Display all elements
-
 **Time Complexity:** O(n)
 
 ---
@@ -292,12 +289,6 @@ This program calculates the sum of all elements present in an array.
 Each element is accessed and added to a running sum.
 
 **File:** `16_SumofArrayElements.c`
-
-### Operations
-
-* Enter array elements
-* Calculate the sum
-* Display the sum
 
 **Time Complexity:** O(n)
 
@@ -482,6 +473,7 @@ After one right rotation:
 **O(1)**
 
 ---
+
 ## 🥈 25. Second Largest Element
 
 This program finds the **second largest element** in an array.
@@ -514,13 +506,45 @@ Second largest element = 25
 
 ---
 
-## 🔗 26. Singly Linked List
+## 🥉 26. Second Smallest Element
+
+This program finds the **second smallest element** in an array.
+
+The program identifies the smallest and second smallest distinct elements while traversing the array.
+
+**File:** `26_SecondSmallestElement.c`
+
+### Example
+
+For an array:
+
+```text
+10 25 8 3 15
+```
+
+The smallest element is `3` and the second smallest element is `8`.
+
+```text
+Second smallest element = 8
+```
+
+### Time Complexity
+
+**O(n)**
+
+### Space Complexity
+
+**O(1)**
+
+---
+
+## 🔗 27. Singly Linked List
 
 A Singly Linked List is a linear data structure where each node contains data and a pointer to the next node.
 
 This program creates a singly linked list by taking values from the user and inserting each node at the end of the list.
 
-**File:** `26_SinglyLinkedList.c`
+**File:** `27_SinglyLinkedList.c`
 
 ### Operations
 
@@ -563,6 +587,7 @@ This program creates a singly linked list by taking values from the user and ins
 | Left Rotate an Array           | O(n)                |
 | Right Rotate an Array          | O(n)                |
 | Second Largest Element         | O(n)                |
+| Second Smallest Element        | O(n)                |
 | Linked List Insert at End      | O(n)                |
 | Linked List Display            | O(n)                |
 
@@ -597,7 +622,7 @@ cd DSA-in-C
 For example:
 
 ```bash
-gcc 24_RightRotateanArray.c -o right_rotate
+gcc 26_SecondSmallestElement.c -o second_smallest
 ```
 
 ### Run the Program
@@ -605,13 +630,13 @@ gcc 24_RightRotateanArray.c -o right_rotate
 **Windows:**
 
 ```bash
-right_rotate.exe
+second_smallest.exe
 ```
 
 **Linux/macOS:**
 
 ```bash
-./right_rotate
+./second_smallest
 ```
 
 ---
@@ -646,7 +671,8 @@ DSA-in-C/
 ├── 23_LeftRotateanArray.c
 ├── 24_RightRotateanArray.c
 ├── 25_SecondLargestElement.c
-├── 26_SinglyLinkedList.c
+├── 26_SecondSmallestElement.c
+├── 27_SinglyLinkedList.c
 └── README.md
 ```
 
