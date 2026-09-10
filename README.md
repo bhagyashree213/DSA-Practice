@@ -75,7 +75,8 @@ The repository includes practical implementations of:
 |      24 | Right Rotate an Array                | `24_RightRotateanArray.c`            |
 |      25 | Second Largest Element               | `25_SecondLargestElement.c`          |
 |      26 | Second Smallest Element              | `26_SecondSmallestElement.c`         |
-|      27 | Singly Linked List                   | `27_SinglyLinkedList.c`              |
+|      27 | Sort Array in Ascending Order        | `27_SortArrayAscending.c`            |
+|      28 | Singly Linked List                   | `28_SinglyLinkedList.c`              |
 
 ---
 
@@ -231,15 +232,9 @@ Merge Sort is a divide-and-conquer sorting algorithm. It divides the array into 
 
 This program deletes an element from an array based on the position entered by the user.
 
-After deletion, the remaining elements are shifted one position to the left to fill the empty space.
+After deletion, the remaining elements are shifted one position to the left.
 
 **File:** `13_Deletionfromarray.c`
-
-### Operations
-
-* Enter array elements
-* Delete an element from a specified position
-* Display the updated array
 
 ### Time Complexity
 
@@ -252,16 +247,9 @@ After deletion, the remaining elements are shifted one position to the left to f
 
 This program inserts a new element into an array at a position entered by the user.
 
-The elements after the specified position are shifted one position to the right to create space for the new element.
+The elements after the specified position are shifted one position to the right.
 
 **File:** `14_InsertElementarray.c`
-
-### Operations
-
-* Enter array elements
-* Enter the position for insertion
-* Enter the element to insert
-* Display the updated array
 
 ### Time Complexity
 
@@ -274,8 +262,6 @@ The elements after the specified position are shifted one position to the right 
 
 Array Traversal is the process of visiting and accessing each element of an array sequentially.
 
-This program demonstrates how to traverse an array and display all its elements.
-
 **File:** `15_ArrayTraversal.c`
 
 **Time Complexity:** O(n)
@@ -285,8 +271,6 @@ This program demonstrates how to traverse an array and display all its elements.
 ## ➕ 16. Sum of Array Elements
 
 This program calculates the sum of all elements present in an array.
-
-Each element is accessed and added to a running sum.
 
 **File:** `16_SumofArrayElements.c`
 
@@ -298,21 +282,11 @@ Each element is accessed and added to a running sum.
 
 This program merges two arrays into a single array.
 
-The elements of the first and second arrays are copied into a new array to create the merged array.
-
 **File:** `17_MergeTwoArrays.c`
-
-### Operations
-
-* Enter elements of the first array
-* Enter elements of the second array
-* Merge both arrays
-* Display the merged array
 
 ### Time Complexity
 
-* **Merge:** O(n + m)
-* **Display:** O(n + m)
+**O(n + m)**
 
 Where `n` is the size of the first array and `m` is the size of the second array.
 
@@ -326,13 +300,9 @@ The sum of all array elements is calculated first, and then the sum is divided b
 
 **File:** `18_FindAverageArray.c`
 
-### Time Complexity
+**Time Complexity:** O(n)
 
-**O(n)**
-
-### Space Complexity
-
-**O(1)**
+**Space Complexity:** O(1)
 
 ---
 
@@ -340,17 +310,11 @@ The sum of all array elements is calculated first, and then the sum is divided b
 
 This program copies all elements from one array into another array.
 
-The original array remains unchanged, while each element is copied to the corresponding position in the new array.
-
 **File:** `19_CopyArray.c`
 
-### Time Complexity
+**Time Complexity:** O(n)
 
-**O(n)**
-
-### Space Complexity
-
-**O(n)**
+**Space Complexity:** O(n)
 
 ---
 
@@ -358,17 +322,11 @@ The original array remains unchanged, while each element is copied to the corres
 
 This program finds the missing element from an array containing numbers from `1` to `N`, where one number is missing.
 
-The program calculates the expected sum of numbers from `1` to `N` and subtracts the actual sum of the array elements to find the missing element.
-
 **File:** `20_FindMissingElement.c`
 
-### Time Complexity
+**Time Complexity:** O(n)
 
-**O(n)**
-
-### Space Complexity
-
-**O(1)**
+**Space Complexity:** O(1)
 
 ---
 
@@ -376,17 +334,11 @@ The program calculates the expected sum of numbers from `1` to `N` and subtracts
 
 This program counts the number of **even and odd elements** present in an array.
 
-An element is even if it is completely divisible by `2`; otherwise, it is odd.
-
 **File:** `21_CountEvenOdd.c`
 
-### Time Complexity
+**Time Complexity:** O(n)
 
-**O(n)**
-
-### Space Complexity
-
-**O(1)**
+**Space Complexity:** O(1)
 
 ---
 
@@ -394,19 +346,13 @@ An element is even if it is completely divisible by `2`; otherwise, it is odd.
 
 This program counts the number of **positive and negative elements** present in an array.
 
-A number greater than `0` is considered positive, while a number less than `0` is considered negative.
-
 The value `0` is neither positive nor negative, so it is not counted.
 
 **File:** `22_CountPositiveNegativeElements.c`
 
-### Time Complexity
+**Time Complexity:** O(n)
 
-**O(n)**
-
-### Space Complexity
-
-**O(1)**
+**Space Complexity:** O(1)
 
 ---
 
@@ -414,13 +360,11 @@ The value `0` is neither positive nor negative, so it is not counted.
 
 This program performs a left rotation on an array by one position.
 
-In a left rotation, the first element of the array is moved to the last position, while all other elements are shifted one position to the left.
+In a left rotation, the first element is moved to the last position.
 
 **File:** `23_LeftRotateanArray.c`
 
 ### Example
-
-For an array:
 
 ```text
 10 20 30 40 50
@@ -432,13 +376,9 @@ After one left rotation:
 20 30 40 50 10
 ```
 
-### Time Complexity
+**Time Complexity:** O(n)
 
-**O(n)**
-
-### Space Complexity
-
-**O(1)**
+**Space Complexity:** O(1)
 
 ---
 
@@ -446,13 +386,11 @@ After one left rotation:
 
 This program performs a right rotation on an array by one position.
 
-In a right rotation, the last element of the array is moved to the first position, while all other elements are shifted one position to the right.
+In a right rotation, the last element is moved to the first position.
 
 **File:** `24_RightRotateanArray.c`
 
 ### Example
-
-For an array:
 
 ```text
 10 20 30 40 50
@@ -464,13 +402,9 @@ After one right rotation:
 50 10 20 30 40
 ```
 
-### Time Complexity
+**Time Complexity:** O(n)
 
-**O(n)**
-
-### Space Complexity
-
-**O(1)**
+**Space Complexity:** O(1)
 
 ---
 
@@ -478,31 +412,25 @@ After one right rotation:
 
 This program finds the **second largest element** in an array.
 
-The program identifies the largest and second largest distinct elements while traversing the array.
-
 **File:** `25_SecondLargestElement.c`
 
 ### Example
 
-For an array:
+For:
 
 ```text
 10 25 8 40 15
 ```
 
-The largest element is `40` and the second largest element is `25`.
+Output:
 
 ```text
 Second largest element = 25
 ```
 
-### Time Complexity
+**Time Complexity:** O(n)
 
-**O(n)**
-
-### Space Complexity
-
-**O(1)**
+**Space Complexity:** O(1)
 
 ---
 
@@ -510,27 +438,53 @@ Second largest element = 25
 
 This program finds the **second smallest element** in an array.
 
-The program identifies the smallest and second smallest distinct elements while traversing the array.
-
 **File:** `26_SecondSmallestElement.c`
 
 ### Example
 
-For an array:
+For:
 
 ```text
 10 25 8 3 15
 ```
 
-The smallest element is `3` and the second smallest element is `8`.
+Output:
 
 ```text
 Second smallest element = 8
 ```
 
+**Time Complexity:** O(n)
+
+**Space Complexity:** O(1)
+
+---
+
+## 📈 27. Sort Array in Ascending Order
+
+This program sorts the elements of an array in **ascending order** using Bubble Sort.
+
+The program compares adjacent elements and swaps them when the left element is greater than the right element.
+
+**File:** `27_SortArrayAscending.c`
+
+### Example
+
+Input:
+
+```text
+5 2 8 1 3
+```
+
+Output:
+
+```text
+1 2 3 5 8
+```
+
 ### Time Complexity
 
-**O(n)**
+**O(n²)**
 
 ### Space Complexity
 
@@ -538,13 +492,13 @@ Second smallest element = 8
 
 ---
 
-## 🔗 27. Singly Linked List
+## 🔗 28. Singly Linked List
 
 A Singly Linked List is a linear data structure where each node contains data and a pointer to the next node.
 
 This program creates a singly linked list by taking values from the user and inserting each node at the end of the list.
 
-**File:** `27_SinglyLinkedList.c`
+**File:** `28_SinglyLinkedList.c`
 
 ### Operations
 
@@ -588,6 +542,7 @@ This program creates a singly linked list by taking values from the user and ins
 | Right Rotate an Array          | O(n)                |
 | Second Largest Element         | O(n)                |
 | Second Smallest Element        | O(n)                |
+| Sort Array Ascending           | O(n²)               |
 | Linked List Insert at End      | O(n)                |
 | Linked List Display            | O(n)                |
 
@@ -608,13 +563,13 @@ gcc --version
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/DSA-in-C.git
+git clone https://github.com/bhagyashree213/DSA-Practice.git
 ```
 
 ### Navigate to the Repository
 
 ```bash
-cd DSA-in-C
+cd DSA-Practice
 ```
 
 ### Compile a Program
@@ -622,7 +577,7 @@ cd DSA-in-C
 For example:
 
 ```bash
-gcc 26_SecondSmallestElement.c -o second_smallest
+gcc 27_SortArrayAscending.c -o sort_array
 ```
 
 ### Run the Program
@@ -630,13 +585,13 @@ gcc 26_SecondSmallestElement.c -o second_smallest
 **Windows:**
 
 ```bash
-second_smallest.exe
+sort_array.exe
 ```
 
 **Linux/macOS:**
 
 ```bash
-./second_smallest
+./sort_array
 ```
 
 ---
@@ -644,7 +599,7 @@ second_smallest.exe
 ## 📂 Repository Structure
 
 ```text
-DSA-in-C/
+DSA-Practice/
 │
 ├── 01_LinearSearch.c
 ├── 02_BinarySearch.c
@@ -672,7 +627,8 @@ DSA-in-C/
 ├── 24_RightRotateanArray.c
 ├── 25_SecondLargestElement.c
 ├── 26_SecondSmallestElement.c
-├── 27_SinglyLinkedList.c
+├── 27_SortArrayAscending.c
+├── 28_SinglyLinkedList.c
 └── README.md
 ```
 
