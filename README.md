@@ -4,6 +4,8 @@ A collection of **Data Structures and Algorithms practical programs implemented 
 
 This repository is created for learning, practicing, and maintaining C programming practicals.
 
+---
+
 ## 📌 Table of Contents
 
 * [About](#-about)
@@ -77,6 +79,7 @@ The repository includes practical implementations of:
 |      26 | Second Smallest Element              | `26_SecondSmallestElement.c`         |
 |      27 | Sort Array in Ascending Order        | `27_SortArrayAscending.c`            |
 |      28 | Singly Linked List                   | `28_SinglyLinkedList.c`              |
+|      29 | Sort Array in Descending Order       | `29_SortArrayDescending.c`           |
 
 ---
 
@@ -512,6 +515,38 @@ This program creates a singly linked list by taking values from the user and ins
 
 ---
 
+## 📉 29. Sort Array in Descending Order
+
+This program sorts the elements of an array in **descending order**.
+
+The program compares array elements and swaps them when the left element is smaller than the right element.
+
+**File:** `29_SortArrayDescending.c`
+
+### Example
+
+Input:
+
+```text
+10 5 20 8 15
+```
+
+Output:
+
+```text
+20 15 10 8 5
+```
+
+### Time Complexity
+
+**O(n²)**
+
+### Space Complexity
+
+**O(1)**
+
+---
+
 ## ⏱️ Time Complexity
 
 | **Algorithm / Operation**      | **Time Complexity** |
@@ -545,6 +580,7 @@ This program creates a singly linked list by taking values from the user and ins
 | Sort Array Ascending           | O(n²)               |
 | Linked List Insert at End      | O(n)                |
 | Linked List Display            | O(n)                |
+| Sort Array Descending          | O(n²)               |
 
 ---
 
@@ -574,10 +610,10 @@ cd DSA-Practice
 
 ### Compile a Program
 
-For example:
+For example, to compile the descending sort program:
 
 ```bash
-gcc 27_SortArrayAscending.c -o sort_array
+gcc 29_SortArrayDescending.c -o sort_descending
 ```
 
 ### Run the Program
@@ -585,13 +621,13 @@ gcc 27_SortArrayAscending.c -o sort_array
 **Windows:**
 
 ```bash
-sort_array.exe
+sort_descending.exe
 ```
 
 **Linux/macOS:**
 
 ```bash
-./sort_array
+./sort_descending
 ```
 
 ---
@@ -629,6 +665,7 @@ DSA-Practice/
 ├── 26_SecondSmallestElement.c
 ├── 27_SortArrayAscending.c
 ├── 28_SinglyLinkedList.c
+├── 29_SortArrayDescending.c
 └── README.md
 ```
 
