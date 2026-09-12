@@ -78,8 +78,8 @@ The repository includes practical implementations of:
 |      25 | Second Largest Element               | `25_SecondLargestElement.c`          |
 |      26 | Second Smallest Element              | `26_SecondSmallestElement.c`         |
 |      27 | Sort Array in Ascending Order        | `27_SortArrayAscending.c`            |
-|      28 | Singly Linked List                   | `28_SinglyLinkedList.c`              |
-|      29 | Sort Array in Descending Order       | `29_SortArrayDescending.c`           |
+|      28 | Sort Array in Descending Order       | `28_SortArrayDescending.c`           |
+|      29 | Singly Linked List                   | `29_SinglyLinkedList.c`              |
 
 ---
 
@@ -495,33 +495,13 @@ Output:
 
 ---
 
-## 🔗 28. Singly Linked List
-
-A Singly Linked List is a linear data structure where each node contains data and a pointer to the next node.
-
-This program creates a singly linked list by taking values from the user and inserting each node at the end of the list.
-
-**File:** `28_SinglyLinkedList.c`
-
-### Operations
-
-* Insert
-* Display
-
-### Time Complexity
-
-* **Insert at End:** O(n)
-* **Display:** O(n)
-
----
-
-## 📉 29. Sort Array in Descending Order
+## 📉 28. Sort Array in Descending Order
 
 This program sorts the elements of an array in **descending order**.
 
 The program compares array elements and swaps them when the left element is smaller than the right element.
 
-**File:** `29_SortArrayDescending.c`
+**File:** `28_SortArrayDescending.c`
 
 ### Example
 
@@ -544,6 +524,26 @@ Output:
 ### Space Complexity
 
 **O(1)**
+
+---
+
+## 🔗 29. Singly Linked List
+
+A Singly Linked List is a linear data structure where each node contains data and a pointer to the next node.
+
+This program creates a singly linked list by taking values from the user and inserting each node at the end of the list.
+
+**File:** `29_SinglyLinkedList.c`
+
+### Operations
+
+* Insert
+* Display
+
+### Time Complexity
+
+* **Insert at End:** O(n)
+* **Display:** O(n)
 
 ---
 
@@ -578,9 +578,10 @@ Output:
 | Second Largest Element         | O(n)                |
 | Second Smallest Element        | O(n)                |
 | Sort Array Ascending           | O(n²)               |
+| Sort Array Descending          | O(n²)               |
 | Linked List Insert at End      | O(n)                |
 | Linked List Display            | O(n)                |
-| Sort Array Descending          | O(n²)               |
+
 
 ---
 
