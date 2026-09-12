@@ -29,6 +29,7 @@ The repository includes practical implementations of:
 
 * Searching Algorithms
 * Sorting Algorithms
+* Heap Sort
 * Array Operations
 * Array Traversal
 * Array Sum and Average
@@ -79,7 +80,8 @@ The repository includes practical implementations of:
 |      26 | Second Smallest Element              | `26_SecondSmallestElement.c`         |
 |      27 | Sort Array in Ascending Order        | `27_SortArrayAscending.c`            |
 |      28 | Sort Array in Descending Order       | `28_SortArrayDescending.c`           |
-|      29 | Singly Linked List                   | `29_SinglyLinkedList.c`              |
+|      29 | Heap Sort                            | `29_HeapSort.c`                      |
+|      30 | Singly Linked List                   | `30_SinglyLinkedList.c`              |
 
 ---
 
@@ -547,6 +549,21 @@ This program creates a singly linked list by taking values from the user and ins
 
 ---
 
+## 🏗️ 29. Heap Sort
+
+Heap Sort is a comparison-based sorting algorithm that uses a **binary heap** data structure. It first builds a max heap and then repeatedly moves the largest element to the end of the array.
+
+**File:** `29_HeapSort.c`
+
+### Heap Sort Complexity
+
+* **Best Case:** O(n log n)
+* **Average Case:** O(n log n)
+* **Worst Case:** O(n log n)
+* **Space Complexity:** O(log n) due to recursive `heapify`
+
+---
+
 ## ⏱️ Time Complexity
 
 | **Algorithm / Operation**      | **Time Complexity** |
@@ -579,6 +596,7 @@ This program creates a singly linked list by taking values from the user and ins
 | Second Smallest Element        | O(n)                |
 | Sort Array Ascending           | O(n²)               |
 | Sort Array Descending          | O(n²)               |
+| Heap Sort                      | O(n log n)          |
 | Linked List Insert at End      | O(n)                |
 | Linked List Display            | O(n)                |
 
@@ -611,10 +629,10 @@ cd DSA-Practice
 
 ### Compile a Program
 
-For example, to compile the descending sort program:
+For example, to compile the Heap Sort program:
 
 ```bash
-gcc 29_SortArrayDescending.c -o sort_descending
+gcc 29_HeapSort.c -o heap_sort
 ```
 
 ### Run the Program
@@ -622,13 +640,13 @@ gcc 29_SortArrayDescending.c -o sort_descending
 **Windows:**
 
 ```bash
-sort_descending.exe
+heap_sort.exe
 ```
 
 **Linux/macOS:**
 
 ```bash
-./sort_descending
+./heap_sort
 ```
 
 ---
@@ -665,8 +683,9 @@ DSA-Practice/
 ├── 25_SecondLargestElement.c
 ├── 26_SecondSmallestElement.c
 ├── 27_SortArrayAscending.c
-├── 28_SinglyLinkedList.c
-├── 29_SortArrayDescending.c
+├── 28_SortArrayDescending.c
+├── 29_HeapSort.c
+├── 30_SinglyLinkedList.c
 └── README.md
 ```
 
