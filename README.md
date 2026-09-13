@@ -23,19 +23,20 @@ This repository is created for learning, practicing, and maintaining C programmi
 
 This repository contains basic **Data Structures and Algorithms programs in C**.
 
-The programs are written in a simple and beginner-friendly way to understand searching, sorting, arrays, queues, and linked lists.
+The programs are written in a simple and beginner-friendly way to understand searching, sorting, arrays, queues, linked lists, and other fundamental programming concepts.
 
 The repository includes practical implementations of:
 
 * Searching Algorithms
 * Sorting Algorithms
 * Heap Sort
+* Counting Sort
 * Array Operations
 * Array Traversal
+* Array Rotation
 * Array Sum and Average
 * Array Copying
 * Merging Arrays
-* Array Rotation
 * Finding Missing Elements
 * Finding Duplicate Elements
 * Finding Minimum and Maximum Elements
@@ -81,7 +82,8 @@ The repository includes practical implementations of:
 |      27 | Sort Array in Ascending Order        | `27_SortArrayAscending.c`            |
 |      28 | Sort Array in Descending Order       | `28_SortArrayDescending.c`           |
 |      29 | Heap Sort                            | `29_HeapSort.c`                      |
-|      30 | Singly Linked List                   | `30_SinglyLinkedList.c`              |
+|      30 | Counting Sort                        | `30_CountingSort.C`                  |
+|      31 | Singly Linked List                   | `31_SinglyLinkedList.c`              |
 
 ---
 
@@ -133,6 +135,8 @@ This program finds the minimum and maximum elements from an array.
 
 **Time Complexity:** O(n)
 
+**Space Complexity:** O(1)
+
 ---
 
 ## 🎯 6. Selection Sort
@@ -142,6 +146,8 @@ Selection Sort repeatedly finds the smallest element from the unsorted portion a
 **File:** `06_SelectionSort.c`
 
 **Time Complexity:** O(n²)
+
+**Space Complexity:** O(1)
 
 ---
 
@@ -153,6 +159,8 @@ This program reverses the elements of an array by swapping elements from both en
 
 **Time Complexity:** O(n)
 
+**Space Complexity:** O(1)
+
 ---
 
 ## 🔁 8. Find Duplicate Elements
@@ -162,6 +170,8 @@ This program identifies duplicate elements present in an array.
 **File:** `08_FindDuplicateElements.c`
 
 **Time Complexity:** O(n²)
+
+**Space Complexity:** O(1)
 
 ---
 
@@ -271,6 +281,8 @@ Array Traversal is the process of visiting and accessing each element of an arra
 
 **Time Complexity:** O(n)
 
+**Space Complexity:** O(1)
+
 ---
 
 ## ➕ 16. Sum of Array Elements
@@ -280,6 +292,8 @@ This program calculates the sum of all elements present in an array.
 **File:** `16_SumofArrayElements.c`
 
 **Time Complexity:** O(n)
+
+**Space Complexity:** O(1)
 
 ---
 
@@ -469,8 +483,6 @@ Second smallest element = 8
 
 This program sorts the elements of an array in **ascending order** using Bubble Sort.
 
-The program compares adjacent elements and swaps them when the left element is greater than the right element.
-
 **File:** `27_SortArrayAscending.c`
 
 ### Example
@@ -487,21 +499,15 @@ Output:
 1 2 3 5 8
 ```
 
-### Time Complexity
+**Time Complexity:** O(n²)
 
-**O(n²)**
-
-### Space Complexity
-
-**O(1)**
+**Space Complexity:** O(1)
 
 ---
 
 ## 📉 28. Sort Array in Descending Order
 
-This program sorts the elements of an array in **descending order**.
-
-The program compares array elements and swaps them when the left element is smaller than the right element.
+This program sorts the elements of an array in **descending order** using Bubble Sort.
 
 **File:** `28_SortArrayDescending.c`
 
@@ -519,23 +525,53 @@ Output:
 20 15 10 8 5
 ```
 
-### Time Complexity
+**Time Complexity:** O(n²)
 
-**O(n²)**
-
-### Space Complexity
-
-**O(1)**
+**Space Complexity:** O(1)
 
 ---
 
-## 🔗 29. Singly Linked List
+## 🏗️ 29. Heap Sort
+
+Heap Sort is a comparison-based sorting algorithm that uses a **binary heap** data structure.
+
+It first builds a max heap and then repeatedly moves the largest element to the end of the array.
+
+**File:** `29_HeapSort.c`
+
+### Heap Sort Complexity
+
+* **Best Case:** O(n log n)
+* **Average Case:** O(n log n)
+* **Worst Case:** O(n log n)
+* **Space Complexity:** O(log n) due to recursive `heapify`
+
+---
+
+## 🔢 30. Counting Sort
+
+Counting Sort is a non-comparison-based sorting algorithm that counts the occurrences of each element and uses those counts to produce the sorted array.
+
+**File:** `30_CountingSort.C`
+
+### Counting Sort Complexity
+
+* **Best Case:** O(n + k)
+* **Average Case:** O(n + k)
+* **Worst Case:** O(n + k)
+* **Space Complexity:** O(n + k)
+
+Where `n` is the number of elements and `k` is the range of input values.
+
+---
+
+## 🔗 31. Singly Linked List
 
 A Singly Linked List is a linear data structure where each node contains data and a pointer to the next node.
 
 This program creates a singly linked list by taking values from the user and inserting each node at the end of the list.
 
-**File:** `29_SinglyLinkedList.c`
+**File:** `31_SinglyLinkedList.c`
 
 ### Operations
 
@@ -549,57 +585,42 @@ This program creates a singly linked list by taking values from the user and ins
 
 ---
 
-## 🏗️ 29. Heap Sort
-
-Heap Sort is a comparison-based sorting algorithm that uses a **binary heap** data structure. It first builds a max heap and then repeatedly moves the largest element to the end of the array.
-
-**File:** `29_HeapSort.c`
-
-### Heap Sort Complexity
-
-* **Best Case:** O(n log n)
-* **Average Case:** O(n log n)
-* **Worst Case:** O(n log n)
-* **Space Complexity:** O(log n) due to recursive `heapify`
-
----
-
 ## ⏱️ Time Complexity
 
-| **Algorithm / Operation**      | **Time Complexity** |
-| ------------------------------ | ------------------- |
-| Linear Search                  | O(n)                |
-| Binary Search                  | O(log n)            |
-| Bubble Sort                    | O(n²)               |
-| Selection Sort                 | O(n²)               |
-| Insertion Sort                 | O(n²)               |
-| Merge Sort                     | O(n log n)          |
-| Quick Sort                     | O(n log n) Average  |
-| Find Minimum & Maximum         | O(n)                |
-| Reverse Array                  | O(n)                |
-| Find Duplicate Elements        | O(n²)               |
-| Circular Queue Enqueue         | O(1)                |
-| Circular Queue Dequeue         | O(1)                |
-| Array Deletion                 | O(n)                |
-| Array Insertion                | O(n)                |
-| Array Traversal                | O(n)                |
-| Sum of Array Elements          | O(n)                |
-| Merge Two Arrays               | O(n + m)            |
-| Find Average of Array Elements | O(n)                |
-| Copy Array                     | O(n)                |
-| Find Missing Element           | O(n)                |
-| Count Even and Odd             | O(n)                |
-| Count Positive and Negative    | O(n)                |
-| Left Rotate an Array           | O(n)                |
-| Right Rotate an Array          | O(n)                |
-| Second Largest Element         | O(n)                |
-| Second Smallest Element        | O(n)                |
-| Sort Array Ascending           | O(n²)               |
-| Sort Array Descending          | O(n²)               |
-| Heap Sort                      | O(n log n)          |
-| Linked List Insert at End      | O(n)                |
-| Linked List Display            | O(n)                |
-
+| **Algorithm / Operation**   | **Time Complexity** |
+| --------------------------- | ------------------- |
+| Linear Search               | O(n)                |
+| Binary Search               | O(log n)            |
+| Bubble Sort                 | O(n²)               |
+| Selection Sort              | O(n²)               |
+| Insertion Sort              | O(n²)               |
+| Merge Sort                  | O(n log n)          |
+| Quick Sort                  | O(n log n) Average  |
+| Heap Sort                   | O(n log n)          |
+| Counting Sort               | O(n + k)            |
+| Find Minimum & Maximum      | O(n)                |
+| Reverse Array               | O(n)                |
+| Find Duplicate Elements     | O(n²)               |
+| Circular Queue Enqueue      | O(1)                |
+| Circular Queue Dequeue      | O(1)                |
+| Array Deletion              | O(n)                |
+| Array Insertion             | O(n)                |
+| Array Traversal             | O(n)                |
+| Sum of Array Elements       | O(n)                |
+| Merge Two Arrays            | O(n + m)            |
+| Find Average                | O(n)                |
+| Copy Array                  | O(n)                |
+| Find Missing Element        | O(n)                |
+| Count Even and Odd          | O(n)                |
+| Count Positive and Negative | O(n)                |
+| Left Rotate an Array        | O(n)                |
+| Right Rotate an Array       | O(n)                |
+| Second Largest Element      | O(n)                |
+| Second Smallest Element     | O(n)                |
+| Sort Array Ascending        | O(n²)               |
+| Sort Array Descending       | O(n²)               |
+| Linked List Insert at End   | O(n)                |
+| Linked List Display         | O(n)                |
 
 ---
 
@@ -629,10 +650,10 @@ cd DSA-Practice
 
 ### Compile a Program
 
-For example, to compile the Heap Sort program:
+For example, to compile the Counting Sort program:
 
 ```bash
-gcc 29_HeapSort.c -o heap_sort
+gcc 30_CountingSort.C -o counting_sort
 ```
 
 ### Run the Program
@@ -640,14 +661,16 @@ gcc 29_HeapSort.c -o heap_sort
 **Windows:**
 
 ```bash
-heap_sort.exe
+counting_sort.exe
 ```
 
 **Linux/macOS:**
 
 ```bash
-./heap_sort
+./counting_sort
 ```
+
+> **Note:** If your compiler treats `.C` files as C++, you can rename `12_MergeSort.C` and `30_CountingSort.C` to `.c` for standard C compilation.
 
 ---
 
@@ -685,7 +708,8 @@ DSA-Practice/
 ├── 27_SortArrayAscending.c
 ├── 28_SortArrayDescending.c
 ├── 29_HeapSort.c
-├── 30_SinglyLinkedList.c
+├── 30_CountingSort.C
+├── 31_SinglyLinkedList.c
 └── README.md
 ```
 
