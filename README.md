@@ -31,6 +31,8 @@ The repository includes practical implementations of:
 * Sorting Algorithms
 * Heap Sort
 * Counting Sort
+* Radix Sort
+* Shell Sort
 * Array Operations
 * Array Traversal
 * Array Rotation
@@ -83,7 +85,9 @@ The repository includes practical implementations of:
 |      28 | Sort Array in Descending Order       | `28_SortArrayDescending.c`           |
 |      29 | Heap Sort                            | `29_HeapSort.c`                      |
 |      30 | Counting Sort                        | `30_CountingSort.C`                  |
-|      31 | Singly Linked List                   | `31_SinglyLinkedList.c`              |
+|      31 | Radix Sort                           | `31_RadixSort.c`                     |
+|      32 | Shell Sort                           | `32_ShellSort.c`                     |
+|      33 | Singly Linked List                   | `33_SinglyLinkedList.c`              |
 
 ---
 
@@ -565,13 +569,49 @@ Where `n` is the number of elements and `k` is the range of input values.
 
 ---
 
-## 🔗 31. Singly Linked List
+## 🔢 31. Radix Sort
+
+Radix Sort is a non-comparison-based sorting algorithm that sorts numbers digit by digit.
+
+It processes the digits from the least significant digit to the most significant digit using Counting Sort as a subroutine.
+
+**File:** `31_RadixSort.c`
+
+### Radix Sort Complexity
+
+* **Best Case:** O(n × d)
+* **Average Case:** O(n × d)
+* **Worst Case:** O(n × d)
+* **Space Complexity:** O(n + k)
+
+Where `n` is the number of elements, `d` is the number of digits in the largest number, and `k` is the digit range (0–9).
+
+---
+
+## 🐚 32. Shell Sort
+
+Shell Sort is an improved version of Insertion Sort that compares elements that are far apart using a gap.
+
+The gap is gradually reduced until it becomes `1`, resulting in a final insertion sort.
+
+**File:** `32_ShellSort.c`
+
+### Shell Sort Complexity
+
+* **Best Case:** Depends on the gap sequence
+* **Average Case:** Depends on the gap sequence
+* **Worst Case:** O(n²) with the simple `n/2, n/4, ...` gap sequence
+* **Space Complexity:** O(1)
+
+---
+
+## 🔗 33. Singly Linked List
 
 A Singly Linked List is a linear data structure where each node contains data and a pointer to the next node.
 
 This program creates a singly linked list by taking values from the user and inserting each node at the end of the list.
 
-**File:** `31_SinglyLinkedList.c`
+**File:** `33_SinglyLinkedList.c`
 
 ### Operations
 
@@ -598,6 +638,8 @@ This program creates a singly linked list by taking values from the user and ins
 | Quick Sort                  | O(n log n) Average  |
 | Heap Sort                   | O(n log n)          |
 | Counting Sort               | O(n + k)            |
+| Radix Sort                  | O(n × d)            |
+| Shell Sort                  | O(n²) Worst Case    |
 | Find Minimum & Maximum      | O(n)                |
 | Reverse Array               | O(n)                |
 | Find Duplicate Elements     | O(n²)               |
@@ -650,10 +692,10 @@ cd DSA-Practice
 
 ### Compile a Program
 
-For example, to compile the Counting Sort program:
+For example, to compile the Shell Sort program:
 
 ```bash
-gcc 30_CountingSort.C -o counting_sort
+gcc 32_ShellSort.c -o shell_sort
 ```
 
 ### Run the Program
@@ -661,13 +703,13 @@ gcc 30_CountingSort.C -o counting_sort
 **Windows:**
 
 ```bash
-counting_sort.exe
+shell_sort.exe
 ```
 
 **Linux/macOS:**
 
 ```bash
-./counting_sort
+./shell_sort
 ```
 
 > **Note:** If your compiler treats `.C` files as C++, you can rename `12_MergeSort.C` and `30_CountingSort.C` to `.c` for standard C compilation.
@@ -709,7 +751,9 @@ DSA-Practice/
 ├── 28_SortArrayDescending.c
 ├── 29_HeapSort.c
 ├── 30_CountingSort.C
-├── 31_SinglyLinkedList.c
+├── 31_RadixSort.c
+├── 32_ShellSort.c
+├── 33_SinglyLinkedList.c
 └── README.md
 ```
 
