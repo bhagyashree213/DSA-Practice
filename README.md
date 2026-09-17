@@ -47,6 +47,7 @@ The repository includes practical implementations of:
 * Counting Positive and Negative Elements
 * Circular Queue
 * Singly Linked List
+* Linked List Insertion
 * Basic Programming Problems
 
 ---
@@ -88,6 +89,7 @@ The repository includes practical implementations of:
 |      31 | Radix Sort                           | `31_RadixSort.c`                     |
 |      32 | Shell Sort                           | `32_ShellSort.c`                     |
 |      33 | Singly Linked List                   | `33_SinglyLinkedList.c`              |
+|      34 | Insert at Beginning                  | `34_InsertAtBeginning.c`             |
 
 ---
 
@@ -625,44 +627,77 @@ This program creates a singly linked list by taking values from the user and ins
 
 ---
 
+## ➕ 34. Insert at Beginning
+
+This program inserts a new node at the **beginning of a Singly Linked List**.
+
+The new node is created and its `next` pointer is connected to the current head. The new node then becomes the new head of the linked list.
+
+**File:** `34_InsertAtBeginning.c`
+
+### Example
+
+Before insertion:
+
+```text
+10 -> 20 -> 30 -> NULL
+```
+
+After inserting `5` at the beginning:
+
+```text
+5 -> 10 -> 20 -> 30 -> NULL
+```
+
+### Time Complexity
+
+**O(1)**
+
+### Space Complexity
+
+**O(1)** extra space per new node.
+
+---
+
 ## ⏱️ Time Complexity
 
-| **Algorithm / Operation**   | **Time Complexity** |
-| --------------------------- | ------------------- |
-| Linear Search               | O(n)                |
-| Binary Search               | O(log n)            |
-| Bubble Sort                 | O(n²)               |
-| Selection Sort              | O(n²)               |
-| Insertion Sort              | O(n²)               |
-| Merge Sort                  | O(n log n)          |
-| Quick Sort                  | O(n log n) Average  |
-| Heap Sort                   | O(n log n)          |
-| Counting Sort               | O(n + k)            |
-| Radix Sort                  | O(n × d)            |
-| Shell Sort                  | O(n²) Worst Case    |
-| Find Minimum & Maximum      | O(n)                |
-| Reverse Array               | O(n)                |
-| Find Duplicate Elements     | O(n²)               |
-| Circular Queue Enqueue      | O(1)                |
-| Circular Queue Dequeue      | O(1)                |
-| Array Deletion              | O(n)                |
-| Array Insertion             | O(n)                |
-| Array Traversal             | O(n)                |
-| Sum of Array Elements       | O(n)                |
-| Merge Two Arrays            | O(n + m)            |
-| Find Average                | O(n)                |
-| Copy Array                  | O(n)                |
-| Find Missing Element        | O(n)                |
-| Count Even and Odd          | O(n)                |
-| Count Positive and Negative | O(n)                |
-| Left Rotate an Array        | O(n)                |
-| Right Rotate an Array       | O(n)                |
-| Second Largest Element      | O(n)                |
-| Second Smallest Element     | O(n)                |
-| Sort Array Ascending        | O(n²)               |
-| Sort Array Descending       | O(n²)               |
-| Linked List Insert at End   | O(n)                |
-| Linked List Display         | O(n)                |
+| **Algorithm / Operation**       | **Time Complexity** |
+| ------------------------------- | ------------------- |
+| Linear Search                   | O(n)                |
+| Binary Search                   | O(log n)            |
+| Bubble Sort                     | O(n²)               |
+| Selection Sort                  | O(n²)               |
+| Insertion Sort                  | O(n²)               |
+| Merge Sort                      | O(n log n)          |
+| Quick Sort                      | O(n log n) Average  |
+| Heap Sort                       | O(n log n)          |
+| Counting Sort                   | O(n + k)            |
+| Radix Sort                      | O(n × d)            |
+| Shell Sort                      | O(n²) Worst Case    |
+| Find Minimum & Maximum          | O(n)                |
+| Reverse Array                   | O(n)                |
+| Find Duplicate Elements         | O(n²)               |
+| Circular Queue Enqueue          | O(1)                |
+| Circular Queue Dequeue          | O(1)                |
+| Array Deletion                  | O(n)                |
+| Array Insertion                 | O(n)                |
+| Array Traversal                 | O(n)                |
+| Sum of Array Elements           | O(n)                |
+| Merge Two Arrays                | O(n + m)            |
+| Find Average                    | O(n)                |
+| Copy Array                      | O(n)                |
+| Find Missing Element            | O(n)                |
+| Count Even and Odd              | O(n)                |
+| Count Positive and Negative     | O(n)                |
+| Left Rotate an Array            | O(n)                |
+| Right Rotate an Array           | O(n)                |
+| Second Largest Element          | O(n)                |
+| Second Smallest Element         | O(n)                |
+| Sort Array Ascending            | O(n²)               |
+| Sort Array Descending           | O(n²)               |
+| Linked List Insert at End       | O(n)                |
+| Linked List Insert at Beginning | O(1)                |
+| Linked List Display             | O(n)                |
 
 ---
 
@@ -698,18 +733,24 @@ For example, to compile the Shell Sort program:
 gcc 32_ShellSort.c -o shell_sort
 ```
 
+For the Insert at Beginning program:
+
+```bash
+gcc 34_InsertAtBeginning.c -o insert_beginning
+```
+
 ### Run the Program
 
 **Windows:**
 
 ```bash
-shell_sort.exe
+insert_beginning.exe
 ```
 
 **Linux/macOS:**
 
 ```bash
-./shell_sort
+./insert_beginning
 ```
 
 > **Note:** If your compiler treats `.C` files as C++, you can rename `12_MergeSort.C` and `30_CountingSort.C` to `.c` for standard C compilation.
@@ -754,6 +795,7 @@ DSA-Practice/
 ├── 31_RadixSort.c
 ├── 32_ShellSort.c
 ├── 33_SinglyLinkedList.c
+├── 34_InsertAtBeginning.c
 └── README.md
 ```
 
