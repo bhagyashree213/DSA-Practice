@@ -1,5 +1,5 @@
 # Linear Search in C
-Code – 
+Code -
 #include <stdio.h>
 int main() {
     int a[10], n, search, i;
