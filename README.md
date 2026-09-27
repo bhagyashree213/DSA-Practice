@@ -673,14 +673,23 @@ Before insertion:
 
 ```text
 10 -> 20 -> 30 -> NULL
+```
 
-Time Complexity
+After inserting `40` at the end:
 
-O(n)
+```text
+10 -> 20 -> 30 -> 40 -> NULL
+```
 
-Space Complexity
+### Time Complexity
 
-O(1) extra space per new node.
+**O(n)**
+
+### Space Complexity
+
+**O(1)** extra space per new node.
+
+---
 
 ## ⏱️ Time Complexity
 
@@ -721,7 +730,7 @@ O(1) extra space per new node.
 | Linked List Insert at End       | O(n)                |
 | Linked List Insert at Beginning | O(1)                |
 | Linked List Display             | O(n)                |
-| Linked List Insert at End       | O(n)                |
+
 
 ---
 
@@ -761,6 +770,12 @@ For the Insert at Beginning program:
 
 ```bash
 gcc 34_InsertAtBeginning.c -o insert_beginning
+```
+
+For the Insert at End program:
+
+```bash
+gcc 35_InsertAtEnd.c -o insert_end
 ```
 
 ### Run the Program
