@@ -90,6 +90,7 @@ The repository includes practical implementations of:
 |      32 | Shell Sort                           | `32_ShellSort.c`                     |
 |      33 | Singly Linked List                   | `33_SinglyLinkedList.c`              |
 |      34 | Insert at Beginning                  | `34_InsertAtBeginning.c`             |
+|      35 | Insert at End                        | `35_InsertAtEnd.c`                   |
 
 ---
 
