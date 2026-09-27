@@ -659,6 +659,29 @@ After inserting `5` at the beginning:
 
 ---
 
+## ➕ 35. Insert at End
+
+This program inserts a new node at the **end of a Singly Linked List**.
+
+The program creates a new node and traverses the linked list until the last node is reached. The new node is then connected to the last node.
+
+**File:** `35_InsertAtEnd.c`
+
+### Example
+
+Before insertion:
+
+```text
+10 -> 20 -> 30 -> NULL
+
+Time Complexity
+
+O(n)
+
+Space Complexity
+
+O(1) extra space per new node.
+
 ## ⏱️ Time Complexity
 
 | **Algorithm / Operation**       | **Time Complexity** |
@@ -698,6 +721,7 @@ After inserting `5` at the beginning:
 | Linked List Insert at End       | O(n)                |
 | Linked List Insert at Beginning | O(1)                |
 | Linked List Display             | O(n)                |
+| Linked List Insert at End       | O(n)                |
 
 ---
 
@@ -796,6 +820,7 @@ DSA-Practice/
 ├── 32_ShellSort.c
 ├── 33_SinglyLinkedList.c
 ├── 34_InsertAtBeginning.c
+├── 35_InsertAtEnd.c
 └── README.md
 ```
 
