@@ -91,6 +91,7 @@ The repository includes practical implementations of:
 |      33 | Singly Linked List                   | `33_SinglyLinkedList.c`              |
 |      34 | Insert at Beginning                  | `34_InsertAtBeginning.c`             |
 |      35 | Insert at End                        | `35_InsertAtEnd.c`                   |
+|      36 | Insert at Position                  | `36_InsertAtPosition.c`             |
 
 ---
 
@@ -660,6 +661,38 @@ After inserting `5` at the beginning:
 
 ---
 
+## ➕ 36. Insert at Position
+
+This program inserts a new node at a **specified position in a Singly Linked List**.
+
+The program creates a new node and adjusts the links so that the new node is inserted at the entered position.
+
+**File:** `36_InsertAtPosition.c`
+
+### Example
+
+Before insertion:
+
+```text
+10 -> 20 -> 30 -> NULL
+```
+
+After inserting `25` at position `3`:
+
+```text
+10 -> 20 -> 25 -> 30 -> NULL
+```
+
+### Time Complexity
+
+**O(n)**
+
+### Space Complexity
+
+**O(1)** extra space per new node.
+
+---
+
 ## ➕ 35. Insert at End
 
 This program inserts a new node at the **end of a Singly Linked List**.
@@ -731,6 +764,7 @@ After inserting `40` at the end:
 | Linked List Insert at End       | O(n)                |
 | Linked List Insert at Beginning | O(1)                |
 | Linked List Display             | O(n)                |
+| Linked List Insert at Position  | O(n)                |
 
 
 ---
@@ -777,6 +811,12 @@ For the Insert at End program:
 
 ```bash
 gcc 35_InsertAtEnd.c -o insert_end
+```
+
+For the Insert at Position program:
+
+```bash
+gcc 36_InsertAtPosition.c -o insert_position
 ```
 
 ### Run the Program
@@ -837,6 +877,7 @@ DSA-Practice/
 ├── 33_SinglyLinkedList.c
 ├── 34_InsertAtBeginning.c
 ├── 35_InsertAtEnd.c
+├── 36_InsertAtPosition.c
 └── README.md
 ```
 
