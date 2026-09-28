@@ -16,6 +16,7 @@ int main() {
 
     return 0;
 }
+
 Output -
 Enter two numbers: 10 20
 After swapping:
