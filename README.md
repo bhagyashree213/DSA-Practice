@@ -48,6 +48,7 @@ The repository includes practical implementations of:
 * Circular Queue
 * Singly Linked List
 * Linked List Insertion
+* Linked List Deletion
 * Basic Programming Problems
 
 ---
@@ -91,7 +92,10 @@ The repository includes practical implementations of:
 |      33 | Singly Linked List                   | `33_SinglyLinkedList.c`              |
 |      34 | Insert at Beginning                  | `34_InsertAtBeginning.c`             |
 |      35 | Insert at End                        | `35_InsertAtEnd.c`                   |
-|      36 | Insert at Position                  | `36_InsertAtPosition.c`             |
+|      36 | Insert at Position                   | `36_InsertAtPosition.c`              |
+|      37 | Delete from Beginning                | `37_DeleteFromBeginning.c`           |
+|      38 | Delete from End                      | `38_DeleteFromEnd.c`                 |
+|      39 | Delete from Position                 | `39_DeletefromPosition.c`            |
 
 ---
 
@@ -311,9 +315,7 @@ This program merges two arrays into a single array.
 
 **File:** `17_MergeTwoArrays.c`
 
-### Time Complexity
-
-**O(n + m)**
+**Time Complexity:** O(n + m)
 
 Where `n` is the size of the first array and `m` is the size of the second array.
 
@@ -322,8 +324,6 @@ Where `n` is the size of the first array and `m` is the size of the second array
 ## 📊 18. Find Average of Array Elements
 
 This program calculates the average of all elements present in an array.
-
-The sum of all array elements is calculated first, and then the sum is divided by the total number of elements.
 
 **File:** `18_FindAverageArray.c`
 
@@ -387,8 +387,6 @@ The value `0` is neither positive nor negative, so it is not counted.
 
 This program performs a left rotation on an array by one position.
 
-In a left rotation, the first element is moved to the last position.
-
 **File:** `23_LeftRotateanArray.c`
 
 ### Example
@@ -412,8 +410,6 @@ After one left rotation:
 ## ➡️ 24. Right Rotate an Array
 
 This program performs a right rotation on an array by one position.
-
-In a right rotation, the last element is moved to the first position.
 
 **File:** `24_RightRotateanArray.c`
 
@@ -441,20 +437,6 @@ This program finds the **second largest element** in an array.
 
 **File:** `25_SecondLargestElement.c`
 
-### Example
-
-For:
-
-```text
-10 25 8 40 15
-```
-
-Output:
-
-```text
-Second largest element = 25
-```
-
 **Time Complexity:** O(n)
 
 **Space Complexity:** O(1)
@@ -467,20 +449,6 @@ This program finds the **second smallest element** in an array.
 
 **File:** `26_SecondSmallestElement.c`
 
-### Example
-
-For:
-
-```text
-10 25 8 3 15
-```
-
-Output:
-
-```text
-Second smallest element = 8
-```
-
 **Time Complexity:** O(n)
 
 **Space Complexity:** O(1)
@@ -489,23 +457,9 @@ Second smallest element = 8
 
 ## 📈 27. Sort Array in Ascending Order
 
-This program sorts the elements of an array in **ascending order** using Bubble Sort.
+This program sorts the elements of an array in **ascending order**.
 
 **File:** `27_SortArrayAscending.c`
-
-### Example
-
-Input:
-
-```text
-5 2 8 1 3
-```
-
-Output:
-
-```text
-1 2 3 5 8
-```
 
 **Time Complexity:** O(n²)
 
@@ -515,23 +469,9 @@ Output:
 
 ## 📉 28. Sort Array in Descending Order
 
-This program sorts the elements of an array in **descending order** using Bubble Sort.
+This program sorts the elements of an array in **descending order**.
 
 **File:** `28_SortArrayDescending.c`
-
-### Example
-
-Input:
-
-```text
-10 5 20 8 15
-```
-
-Output:
-
-```text
-20 15 10 8 5
-```
 
 **Time Complexity:** O(n²)
 
@@ -542,8 +482,6 @@ Output:
 ## 🏗️ 29. Heap Sort
 
 Heap Sort is a comparison-based sorting algorithm that uses a **binary heap** data structure.
-
-It first builds a max heap and then repeatedly moves the largest element to the end of the array.
 
 **File:** `29_HeapSort.c`
 
@@ -577,8 +515,6 @@ Where `n` is the number of elements and `k` is the range of input values.
 
 Radix Sort is a non-comparison-based sorting algorithm that sorts numbers digit by digit.
 
-It processes the digits from the least significant digit to the most significant digit using Counting Sort as a subroutine.
-
 **File:** `31_RadixSort.c`
 
 ### Radix Sort Complexity
@@ -588,15 +524,11 @@ It processes the digits from the least significant digit to the most significant
 * **Worst Case:** O(n × d)
 * **Space Complexity:** O(n + k)
 
-Where `n` is the number of elements, `d` is the number of digits in the largest number, and `k` is the digit range (0–9).
-
 ---
 
 ## 🐚 32. Shell Sort
 
 Shell Sort is an improved version of Insertion Sort that compares elements that are far apart using a gap.
-
-The gap is gradually reduced until it becomes `1`, resulting in a final insertion sort.
 
 **File:** `32_ShellSort.c`
 
@@ -604,7 +536,7 @@ The gap is gradually reduced until it becomes `1`, resulting in a final insertio
 
 * **Best Case:** Depends on the gap sequence
 * **Average Case:** Depends on the gap sequence
-* **Worst Case:** O(n²) with the simple `n/2, n/4, ...` gap sequence
+* **Worst Case:** O(n²)
 * **Space Complexity:** O(1)
 
 ---
@@ -612,8 +544,6 @@ The gap is gradually reduced until it becomes `1`, resulting in a final insertio
 ## 🔗 33. Singly Linked List
 
 A Singly Linked List is a linear data structure where each node contains data and a pointer to the next node.
-
-This program creates a singly linked list by taking values from the user and inserting each node at the end of the list.
 
 **File:** `33_SinglyLinkedList.c`
 
@@ -633,8 +563,6 @@ This program creates a singly linked list by taking values from the user and ins
 
 This program inserts a new node at the **beginning of a Singly Linked List**.
 
-The new node is created and its `next` pointer is connected to the current head. The new node then becomes the new head of the linked list.
-
 **File:** `34_InsertAtBeginning.c`
 
 ### Example
@@ -645,27 +573,47 @@ Before insertion:
 10 -> 20 -> 30 -> NULL
 ```
 
-After inserting `5` at the beginning:
+After inserting `5`:
 
 ```text
 5 -> 10 -> 20 -> 30 -> NULL
 ```
 
-### Time Complexity
+**Time Complexity:** O(1)
 
-**O(1)**
+**Space Complexity:** O(1) extra space per new node.
 
-### Space Complexity
+---
 
-**O(1)** extra space per new node.
+## ➕ 35. Insert at End
+
+This program inserts a new node at the **end of a Singly Linked List**.
+
+**File:** `35_InsertAtEnd.c`
+
+### Example
+
+Before insertion:
+
+```text
+10 -> 20 -> 30 -> NULL
+```
+
+After inserting `40`:
+
+```text
+10 -> 20 -> 30 -> 40 -> NULL
+```
+
+**Time Complexity:** O(n)
+
+**Space Complexity:** O(1) extra space per new node.
 
 ---
 
 ## ➕ 36. Insert at Position
 
 This program inserts a new node at a **specified position in a Singly Linked List**.
-
-The program creates a new node and adjusts the links so that the new node is inserted at the entered position.
 
 **File:** `36_InsertAtPosition.c`
 
@@ -683,89 +631,139 @@ After inserting `25` at position `3`:
 10 -> 20 -> 25 -> 30 -> NULL
 ```
 
-### Time Complexity
+**Time Complexity:** O(n)
 
-**O(n)**
-
-### Space Complexity
-
-**O(1)** extra space per new node.
+**Space Complexity:** O(1) extra space per new node.
 
 ---
 
-## ➕ 35. Insert at End
+## 🗑️ 37. Delete from Beginning
 
-This program inserts a new node at the **end of a Singly Linked List**.
+This program deletes the first node from a **Singly Linked List**.
 
-The program creates a new node and traverses the linked list until the last node is reached. The new node is then connected to the last node.
+The head pointer is moved to the next node, and the previous first node is freed from memory.
 
-**File:** `35_InsertAtEnd.c`
+**File:** `37_DeleteFromBeginning.c`
 
 ### Example
 
-Before insertion:
-
-```text
-10 -> 20 -> 30 -> NULL
-```
-
-After inserting `40` at the end:
+Before deletion:
 
 ```text
 10 -> 20 -> 30 -> 40 -> NULL
 ```
 
-### Time Complexity
+After deletion:
 
-**O(n)**
+```text
+20 -> 30 -> 40 -> NULL
+```
 
-### Space Complexity
+**Time Complexity:** O(1)
 
-**O(1)** extra space per new node.
+**Space Complexity:** O(1)
+
+---
+
+## 🗑️ 38. Delete from End
+
+This program deletes the last node from a **Singly Linked List**.
+
+The program traverses the list to find the second-last node, removes the last node, and sets the second-last node's `next` pointer to `NULL`.
+
+**File:** `38_DeleteFromEnd.c`
+
+### Example
+
+Before deletion:
+
+```text
+10 -> 20 -> 30 -> 40 -> NULL
+```
+
+After deletion:
+
+```text
+10 -> 20 -> 30 -> NULL
+```
+
+**Time Complexity:** O(n)
+
+**Space Complexity:** O(1)
+
+---
+
+## 🗑️ 39. Delete from Position
+
+This program deletes a node from a **specified position in a Singly Linked List**.
+
+The program adjusts the links between nodes and removes the node at the given position.
+
+**File:** `39_DeletefromPosition.c`
+
+### Example
+
+Before deletion:
+
+```text
+10 -> 20 -> 30 -> 40 -> NULL
+```
+
+After deleting the node at position `3`:
+
+```text
+10 -> 20 -> 40 -> NULL
+```
+
+**Time Complexity:** O(n)
+
+**Space Complexity:** O(1)
 
 ---
 
 ## ⏱️ Time Complexity
 
-| **Algorithm / Operation**       | **Time Complexity** |
-| ------------------------------- | ------------------- |
-| Linear Search                   | O(n)                |
-| Binary Search                   | O(log n)            |
-| Bubble Sort                     | O(n²)               |
-| Selection Sort                  | O(n²)               |
-| Insertion Sort                  | O(n²)               |
-| Merge Sort                      | O(n log n)          |
-| Quick Sort                      | O(n log n) Average  |
-| Heap Sort                       | O(n log n)          |
-| Counting Sort                   | O(n + k)            |
-| Radix Sort                      | O(n × d)            |
-| Shell Sort                      | O(n²) Worst Case    |
-| Find Minimum & Maximum          | O(n)                |
-| Reverse Array                   | O(n)                |
-| Find Duplicate Elements         | O(n²)               |
-| Circular Queue Enqueue          | O(1)                |
-| Circular Queue Dequeue          | O(1)                |
-| Array Deletion                  | O(n)                |
-| Array Insertion                 | O(n)                |
-| Array Traversal                 | O(n)                |
-| Sum of Array Elements           | O(n)                |
-| Merge Two Arrays                | O(n + m)            |
-| Find Average                    | O(n)                |
-| Copy Array                      | O(n)                |
-| Find Missing Element            | O(n)                |
-| Count Even and Odd              | O(n)                |
-| Count Positive and Negative     | O(n)                |
-| Left Rotate an Array            | O(n)                |
-| Right Rotate an Array           | O(n)                |
-| Second Largest Element          | O(n)                |
-| Second Smallest Element         | O(n)                |
-| Sort Array Ascending            | O(n²)               |
-| Sort Array Descending           | O(n²)               |
-| Linked List Insert at End       | O(n)                |
-| Linked List Insert at Beginning | O(1)                |
-| Linked List Display             | O(n)                |
-| Linked List Insert at Position  | O(n)                |
-
+| **Algorithm / Operation**         | **Time Complexity** |
+| --------------------------------- | ------------------- |
+| Linear Search                     | O(n)                |
+| Binary Search                     | O(log n)            |
+| Bubble Sort                       | O(n²)               |
+| Selection Sort                    | O(n²)               |
+| Insertion Sort                    | O(n²)               |
+| Merge Sort                        | O(n log n)          |
+| Quick Sort                        | O(n log n) Average  |
+| Heap Sort                         | O(n log n)          |
+| Counting Sort                     | O(n + k)            |
+| Radix Sort                        | O(n × d)            |
+| Shell Sort                        | O(n²) Worst Case    |
+| Find Minimum & Maximum            | O(n)                |
+| Reverse Array                     | O(n)                |
+| Find Duplicate Elements           | O(n²)               |
+| Circular Queue Enqueue            | O(1)                |
+| Circular Queue Dequeue            | O(1)                |
+| Array Deletion                    | O(n)                |
+| Array Insertion                   | O(n)                |
+| Array Traversal                   | O(n)                |
+| Sum of Array Elements             | O(n)                |
+| Merge Two Arrays                  | O(n + m)            |
+| Find Average                      | O(n)                |
+| Copy Array                        | O(n)                |
+| Find Missing Element              | O(n)                |
+| Count Even and Odd                | O(n)                |
+| Count Positive and Negative       | O(n)                |
+| Left Rotate an Array              | O(n)                |
+| Right Rotate an Array             | O(n)                |
+| Second Largest Element            | O(n)                |
+| Second Smallest Element           | O(n)                |
+| Sort Array Ascending              | O(n²)               |
+| Sort Array Descending             | O(n²)               |
+| Linked List Insert at End         | O(n)                |
+| Linked List Insert at Beginning   | O(1)                |
+| Linked List Insert at Position    | O(n)                |
+| Linked List Delete from Beginning | O(1)                |
+| Linked List Delete from End       | O(n)                |
+| Linked List Delete from Position  | O(n)                |
+| Linked List Display               | O(n)                |
 
 ---
 
@@ -795,28 +793,18 @@ cd DSA-Practice
 
 ### Compile a Program
 
-For example, to compile the Shell Sort program:
+For example:
 
 ```bash
-gcc 32_ShellSort.c -o shell_sort
+gcc 37_DeleteFromBeginning.c -o delete_beginning
 ```
 
-For the Insert at Beginning program:
-
 ```bash
-gcc 34_InsertAtBeginning.c -o insert_beginning
+gcc 38_DeleteFromEnd.c -o delete_end
 ```
 
-For the Insert at End program:
-
 ```bash
-gcc 35_InsertAtEnd.c -o insert_end
-```
-
-For the Insert at Position program:
-
-```bash
-gcc 36_InsertAtPosition.c -o insert_position
+gcc 39_DeletefromPosition.c -o delete_position
 ```
 
 ### Run the Program
@@ -824,13 +812,13 @@ gcc 36_InsertAtPosition.c -o insert_position
 **Windows:**
 
 ```bash
-insert_beginning.exe
+delete_beginning.exe
 ```
 
 **Linux/macOS:**
 
 ```bash
-./insert_beginning
+./delete_beginning
 ```
 
 > **Note:** If your compiler treats `.C` files as C++, you can rename `12_MergeSort.C` and `30_CountingSort.C` to `.c` for standard C compilation.
@@ -878,6 +866,9 @@ DSA-Practice/
 ├── 34_InsertAtBeginning.c
 ├── 35_InsertAtEnd.c
 ├── 36_InsertAtPosition.c
+├── 37_DeleteFromBeginning.c
+├── 38_DeleteFromEnd.c
+├── 39_DeletefromPosition.c
 └── README.md
 ```
 
