@@ -96,7 +96,9 @@ The repository includes practical implementations of:
 |      37 | Delete from Beginning                | `37_DeleteFromBeginning.c`           |
 |      38 | Delete from End                      | `38_DeleteFromEnd.c`                 |
 |      39 | Delete from Position                 | `39_DeletefromPosition.c`            |
-
+|      40 | Search in Linked List                | `40_SearchLinkedList.c`              |
+|      41 | Count Nodes                          | `41_CountNodes.c`                    |
+|      42 | Reverse Linked List                  | `42_ReverseLinkedList.c`             |
 ---
 
 ## 🔍 1. Linear Search
@@ -721,6 +723,43 @@ After deleting the node at position `3`:
 
 ---
 
+---
+
+## 🔍 40. Search in Linked List
+
+This program searches for a specified element in a **Singly Linked List**.
+
+**File:** `40_SearchLinkedList.c`
+
+**Time Complexity:** O(n)
+
+**Space Complexity:** O(1)
+
+---
+
+## 🔢 41. Count Nodes
+
+This program counts the total number of nodes present in a **Singly Linked List**.
+
+**File:** `41_CountNodes.c`
+
+**Time Complexity:** O(n)
+
+**Space Complexity:** O(1)
+
+---
+
+## 🔄 42. Reverse Linked List
+
+This program reverses a **Singly Linked List** by changing the links between the nodes.
+
+**File:** `42_ReverseLinkedList.c`
+
+**Time Complexity:** O(n)
+
+**Space Complexity:** O(1)
+
+
 ## ⏱️ Time Complexity
 
 | **Algorithm / Operation**         | **Time Complexity** |
@@ -764,7 +803,9 @@ After deleting the node at position `3`:
 | Linked List Delete from End       | O(n)                |
 | Linked List Delete from Position  | O(n)                |
 | Linked List Display               | O(n)                |
-
+| Search in Linked List             | O(n)                |
+| Count Nodes                       | O(n)                |
+| Reverse Linked List               | O(n)                |
 ---
 
 ## ▶️ How to Run
@@ -869,6 +910,10 @@ DSA-Practice/
 ├── 37_DeleteFromBeginning.c
 ├── 38_DeleteFromEnd.c
 ├── 39_DeletefromPosition.c
+├── 40_SearchLinkedList.c
+├── 41_CountNodes.c
+├── 42_ReverseLinkedList.c
+└── README.md
 └── README.md
 ```
 
