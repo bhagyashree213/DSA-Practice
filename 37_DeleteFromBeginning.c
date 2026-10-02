@@ -2,14 +2,11 @@
 Code -
 #include <stdio.h>
 #include <stdlib.h>
-
 struct Node {
     int data;
     struct Node *next;
 };
-
 struct Node *head = NULL;
-
 void insertEnd(int value) {
     struct Node *newNode = malloc(sizeof(struct Node));
     newNode->data = value;
@@ -19,7 +16,6 @@ void insertEnd(int value) {
         head = newNode;
         return;
     }
-
     struct Node *temp = head;
     while (temp->next != NULL)
         temp = temp->next;
