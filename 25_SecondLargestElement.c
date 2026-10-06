@@ -2,22 +2,17 @@
 Code -
 #include <stdio.h>
 #include <limits.h>
-
 int main() {
     int n, i;
     int arr[100];
     int largest, secondLargest;
-
     printf("Enter the number of elements: ");
     scanf("%d", &n);
-
     printf("Enter %d elements:\n", n);
     for (i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-
     largest = secondLargest = INT_MIN;
-
     for (i = 0; i < n; i++) {
         if (arr[i] > largest) {
             secondLargest = largest;
@@ -27,13 +22,11 @@ int main() {
             secondLargest = arr[i];
         }
     }
-
     if (secondLargest == INT_MIN) {
         printf("Second largest element does not exist.\n");
     } else {
         printf("Second largest element = %d\n", secondLargest);
     }
-  
     return 0;
 }
 
