@@ -1,5 +1,5 @@
 # Buuble Sort
-Code -
+Code =
 #include <stdio.h>
 int main()
 {
@@ -30,7 +30,8 @@ int main()
     }
     return 0;
 }
-Output -
+
+Output =
 Enter the number of elements: 6
 Enter elements:
 1 34 54 32 16 23
