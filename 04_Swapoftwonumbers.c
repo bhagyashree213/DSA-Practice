@@ -1,5 +1,5 @@
 # Swap of two Numbers
-Code -
+Code =
 #include <stdio.h>
 int main() {
     int a, b, temp;
@@ -14,7 +14,7 @@ int main() {
     return 0;
 }
 
-Output -
+Output =
 Enter two numbers: 10 20
 After swapping:
 a = 20
