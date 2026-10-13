@@ -1,5 +1,5 @@
 # Linear Search in C
-Code -
+Code =
 #include <stdio.h>
 int main() {
     int a[10], n, search, i;
@@ -21,7 +21,7 @@ int main() {
     printf("Element not found");
     return 0;
 }
-Output –
+Output =
 Enter number of elements: 5
 Enter elements: 1 4 6 7 9
 Enter element to search: 1 
