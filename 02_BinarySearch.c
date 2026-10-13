@@ -1,5 +1,5 @@
 # Binary Search in C
-Code -
+Code =
 #include <stdio.h>
 int main() {
     int a[10], n, search;
@@ -30,7 +30,7 @@ int main() {
     printf("Element not found");
     return 0;
 }
-Output –
+Output =
 Enter number of elements: 5
 Enter elements in sorted order: 1 2 3 4 5
 Enter element to search: 4
