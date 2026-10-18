@@ -1,5 +1,5 @@
 # Find Minimum and Maximum Element from the array
-Code -
+Code =
 #include <stdio.h>
 int main() {
     int arr[100], n;
@@ -24,7 +24,8 @@ int main() {
     printf("Maximum element = %d\n", max);
     return 0;
 }
-Output -
+
+Output =
 Enter number of elements: 5
 Enter 5 elements:
 10 25 5 40 15
