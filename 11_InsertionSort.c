@@ -1,5 +1,5 @@
 # Insertion Sort
-Code -
+Code =
 #include <stdio.h>
 int main() {
     int a[100], n, i, j, temp;
@@ -25,7 +25,7 @@ int main() {
     return 0;
 }
 
-Output -
+Output =
 Enter number of elements: 5
 Enter elements: 7 6 9 2 1
 Sorted array: 1 2 6 7 9 
