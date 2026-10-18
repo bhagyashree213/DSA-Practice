@@ -1,5 +1,5 @@
 # Find Duplicate Elements in an Array
-Code -
+Code =
 #include <stdio.h>
 int main() {
     int n, i, j;
@@ -22,7 +22,7 @@ int main() {
     return 0;
 }
 
-Output -
+Output =
 Enter the size of array: 6
 Enter array elements:
 10 20 30 20 40 10
