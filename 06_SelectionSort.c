@@ -1,5 +1,5 @@
 # Selction Sort
-Code -
+Code =
 #include <stdio.h>
 int main() {
     int a[100], n, i,j, min, temp;
@@ -36,7 +36,7 @@ int main() {
     return 0;
 }
 
-Output -
+Output =
 Enter number of elements:
 5
 Enter 5 elements: 
