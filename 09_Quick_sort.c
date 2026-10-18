@@ -1,5 +1,5 @@
 # Quick Sort
-Code -
+Code =
 #include <stdio.h>
 void quickSort(int a[], int low, int high) {
     int i, j, pivot, temp;
@@ -21,7 +21,6 @@ void quickSort(int a[], int low, int high) {
         temp = a[low];
         a[low] = a[j];
         a[j] = temp;
-
         quickSort(a, low, j - 1);
         quickSort(a, j + 1, high);
     }
@@ -40,7 +39,7 @@ int main() {
     return 0;
 }
 
-Output -
+Output =
 Enter number of elements: 5
 Enter elements:
 40 10 30 20 50
