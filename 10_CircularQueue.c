@@ -1,5 +1,5 @@
 # Circular Queue
-Code -
+Code =
 #include <stdio.h>
 #define MAX 100
 int queue[MAX];
@@ -57,7 +57,6 @@ int main() {
         printf("Invalid size!\n");
         return 0;
     }
-
     while (1) {
         printf("\n--- Circular Queue Menu ---\n");
         printf("1. Enqueue\n");
@@ -66,12 +65,10 @@ int main() {
         printf("4. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
-
         switch (choice) {
             case 1:
                 enqueue();
                 break;
-
             case 2:
                 dequeue();
                 break;
@@ -89,7 +86,7 @@ int main() {
     return 0;
 }
 
-Output -
+Output =
 Enter size of circular queue (max 100): 5
 
 --- Circular Queue Menu ---
