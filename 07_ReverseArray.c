@@ -1,5 +1,5 @@
 # Reverse an Array in C
-Code -
+Code =
 #include <stdio.h>
 int main() {
     int n, i;
@@ -17,7 +17,7 @@ int main() {
     return 0;
 }
 
-Output -
+Output =
 Enter the size of array: 5
 Enter array elements:
 10 20 30 40 50
