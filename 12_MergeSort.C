@@ -1,5 +1,5 @@
 # Merge Sort 
-Code -
+Code =
 #include <stdio.h>
 void merge(int a[], int low, int mid, int high)
 {
@@ -65,7 +65,7 @@ int main()
     return 0;
 }
 
-Output -
+Output =
 Enter number of elements: 5
 Enter elements:
 2 4 1 9 3
