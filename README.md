@@ -99,6 +99,9 @@ The repository includes practical implementations of:
 |      40 | Search in Linked List                | `40_SearchLinkedList.c`              |
 |      41 | Count Nodes                          | `41_CountNodes.c`                    |
 |      42 | Reverse Linked List                  | `42_ReverseLinkedList.c`             |
+|      43 | Find Middle Node                     | `43_FindMiddleNode.c`                |
+|      44 | Remove Duplicates                    | `44_RemoveDuplicates.c`              |
+|      45 | Merge Two Linked Lists               | `45_MergeTwoLinkedLists.c`           |
 ---
 
 ## 🔍 1. Linear Search
@@ -759,6 +762,43 @@ This program reverses a **Singly Linked List** by changing the links between the
 
 **Space Complexity:** O(1)
 
+----
+
+## 🔎 43. Find Middle Node
+
+This program finds the middle node of a Singly Linked List using slow and fast pointers.
+
+**File:** `43_FindMiddleNode.c`
+
+**Time Complexity:** O(n)
+
+**Space Complexity:** O(1)
+
+---
+
+## 🔄 44. Remove Duplicates
+
+This program removes duplicate elements from a Singly Linked List while keeping the first occurrence of each element.
+
+**File:** `44_RemoveDuplicates.c`
+
+**Time Complexity:** O(n²)
+
+**Space Complexity:** O(1)
+
+---
+
+## 🔗 45. Merge Two Linked Lists
+
+This program merges two Singly Linked Lists by connecting the second list to the end of the first list.
+
+**File:** `45_MergeTwoLinkedLists.c`
+
+**Time Complexity:** O(n + m)
+
+**Space Complexity:** O(1)
+
+---
 
 ## ⏱️ Time Complexity
 
@@ -806,6 +846,9 @@ This program reverses a **Singly Linked List** by changing the links between the
 | Search in Linked List             | O(n)                |
 | Count Nodes                       | O(n)                |
 | Reverse Linked List               | O(n)                |
+| Find Middle Node                  | O(n)                |
+| Remove Duplicates                 | O(n²)               |
+| Merge Two Linked Lists            | O(n + m)            |
 ---
 
 ## ▶️ How to Run
@@ -913,7 +956,9 @@ DSA-Practice/
 ├── 40_SearchLinkedList.c
 ├── 41_CountNodes.c
 ├── 42_ReverseLinkedList.c
-└── README.md
+├── 43_FindMiddleNode.c
+├── 44_RemoveDuplicates.c
+├── 45_MergeTwoLinkedList.c
 └── README.md
 ```
 
