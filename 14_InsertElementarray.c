@@ -1,5 +1,5 @@
-#Insert Elements in Array
-Code - 
+# Insert Elements in Array
+Code =
 #include <stdio.h>
 int main() {
     int arr[100], n, pos, value;
@@ -25,7 +25,7 @@ int main() {
     return 0;
 }
 
-Output -
+Output =
 Enter number of elements: 4 5
 Enter elements:
 1 2 3 4 5
