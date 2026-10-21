@@ -1,5 +1,5 @@
 # Deletion from Array
-Code -
+Code =
 #include <stdio.h>
 int main() {
     int arr[100], n, pos;
@@ -23,7 +23,7 @@ int main() {
     return 0;
 }
 
-Output -
+Output =
 Enter number of elements: 5
 Enter elements: 10 20 30 40 50
 Enter position to delete: 3
