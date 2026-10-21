@@ -1,5 +1,5 @@
 # Array Traversal in C
-Code -
+Code =
 #include <stdio.h>
 int main() {
     int n, arr[100];
@@ -16,7 +16,7 @@ int main() {
     return 0;
 }
 
-Output -
+Output =
 Enter the number of elements: 6
 Enter 6 elements:
 2 3 1 3 8 7 6
