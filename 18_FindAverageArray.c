@@ -1,5 +1,5 @@
 # Find Average of Array Elements
-Code -
+Code =
 #include <stdio.h>
 int main() {
     int n, arr[100];
@@ -17,7 +17,7 @@ int main() {
     return 0;
 }
 
-Output -
+Output =
 Enter the number of elements: 5
 Enter 5 elements:
 10 20 30 40 50
