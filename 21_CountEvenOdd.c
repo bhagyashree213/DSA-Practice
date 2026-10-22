@@ -1,5 +1,5 @@
 # Count Even and Odd Elements
-Code -
+Code =
 #include <stdio.h>
 int main() {
     int n, i;
@@ -22,7 +22,7 @@ int main() {
     return 0;
 }
 
-Output -
+Output =
 Enter number of elements: 6
 Enter 6 elements:
 10 15 20 25 30 35
