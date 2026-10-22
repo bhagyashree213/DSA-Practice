@@ -1,5 +1,5 @@
 # Find Missing Element
-Code -
+Code =
 #include <stdio.h>
 int main()
 {
@@ -19,7 +19,7 @@ int main()
     return 0;
 }
 
-Output -
+Output =
 Enter the number of elements: 5
 Enter 4 elements from 1 to 5:
 1 2 3 5
