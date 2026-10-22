@@ -1,5 +1,5 @@
 # Merge Two Arrays
-Code -
+Code =
 #include <stdio.h>
 int main() {
     int n1, n2;
@@ -29,7 +29,7 @@ int main() {
     return 0;
 }
 
-Output -
+Output =
 Enter the number of elements in first array: 3
 Enter elements of first array:
 10 20 30
