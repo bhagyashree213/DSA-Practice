@@ -1,5 +1,5 @@
 # Count Positive and Negative Elements
-Code -
+Code =
 #include <stdio.h>
 int main() {
     int n, i;
@@ -21,7 +21,7 @@ int main() {
     return 0;
 }
 
-Output -
+Output =
 Enter the number of elements: 7
 Enter 7 elements:
 10
