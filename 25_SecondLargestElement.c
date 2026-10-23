@@ -1,5 +1,5 @@
 # Second Largest Element
-Code -
+Code =
 #include <stdio.h>
 #include <limits.h>
 int main() {
@@ -30,7 +30,7 @@ int main() {
     return 0;
 }
 
-Output -
+Output =
 Enter the number of elements: 5
 Enter 5 elements:
 10 25 8 40 15
