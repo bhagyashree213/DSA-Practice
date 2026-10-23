@@ -1,5 +1,5 @@
 #  Right Rotate an Array
-Code -
+Code =
 #include <stdio.h>
 int main() {
     int n, k;
@@ -27,7 +27,7 @@ int main() {
     return 0;
 }
 
-Output -
+Output =
 Enter the size of array: 5
 Enter array elements: 1 2 3 4 5
 Enter number of rotations: 2
