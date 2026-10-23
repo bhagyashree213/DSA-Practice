@@ -1,5 +1,5 @@
 # Left Rotate an Array
-Code -
+Code =
 #include <stdio.h>
 int main() {
     int n, i, first;
@@ -22,7 +22,7 @@ int main() {
     return 0;
 }
 
-Output -
+Output =
 Enter the size of array: 5
 Enter 5 elements: 10 20 30 40 50
 Array after left rotation: 20 30 40 50 10
