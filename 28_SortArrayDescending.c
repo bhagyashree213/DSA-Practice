@@ -1,5 +1,5 @@
 # Sort Array in Descending Order
-Code -
+Code =
 #include <stdio.h>
 int main() {
     int n, i, j, temp;
@@ -26,7 +26,7 @@ int main() {
     return 0;
 }
 
-Output -
+Output =
 Enter number of elements: 5
 Enter array elements:
 10 5 20 8 15
