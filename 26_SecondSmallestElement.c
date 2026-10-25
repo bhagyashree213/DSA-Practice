@@ -1,5 +1,5 @@
 # Second Smallest Element
-Code -
+Code =
 #include <stdio.h>
 #include <limits.h>
 int main() {
@@ -30,7 +30,7 @@ int main() {
     return 0;
 }
 
-Output -
+Output =
 Enter number of elements: 6
 Enter elements:
 12 5 8 3 9 7
