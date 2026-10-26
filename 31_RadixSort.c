@@ -1,5 +1,5 @@
 # Radix Sort
-Code -
+Code =
 #include <stdio.h>
 int getMax(int arr[], int n)
 {
@@ -49,7 +49,7 @@ int main()
     return 0;
 }
 
-Output -
+Output =
 Enter number of elements: 8
 Enter elements:
 170 45 75 90 802 24 2 66
