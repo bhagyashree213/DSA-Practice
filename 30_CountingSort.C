@@ -1,5 +1,5 @@
 # Counting Sort
-Code -
+Code =
 #include <stdio.h>
 void countingSort(int arr[], int n) {
     int max = arr[0];
@@ -35,7 +35,7 @@ int main() {
     return 0;
 }
 
-Output -
+Output =
 Enter number of elements: 7
 Enter elements: 4 2 2 8 3 3 1
 Sorted array: 1 2 2 3 3 4 8
