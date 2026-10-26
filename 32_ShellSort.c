@@ -1,5 +1,5 @@
 # Shell Sort
-Code -
+Code =
 #include <stdio.h>
 void shellSort(int arr[], int n)
 {
@@ -33,7 +33,7 @@ int main()
     return 0;
 }
 
-Output -
+Output =
 Enter number of elements: 7
 Enter elements:
 64 34 25 12 22 11 90
