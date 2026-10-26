@@ -1,5 +1,5 @@
 # Heap Sort
-Code -
+Code =
 #include <stdio.h>
 void heapify(int arr[], int n, int i)
 {
@@ -48,7 +48,7 @@ int main()
     return 0;
 }
 
-Output -
+Output =
 Enter number of elements: 5
 Enter elements:
 40 10 30 50 20
