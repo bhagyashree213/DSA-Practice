@@ -1,5 +1,5 @@
 # Insert At Beginning
-Code -
+Code =
 #include <stdio.h>
 #include <stdlib.h>
 struct Node {
@@ -35,7 +35,7 @@ int main() {
     return 0;
 }
 
-Output -
+Output =
 Enter number of elements: 3
 Enter element: 10
 Enter element: 20
