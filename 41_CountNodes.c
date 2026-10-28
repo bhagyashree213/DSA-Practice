@@ -1,5 +1,5 @@
 # Count Nodes
-Code -
+Code =
 #include <stdio.h>
 #include <stdlib.h>
 struct Node {
@@ -46,7 +46,7 @@ int main() {
     return 0;
 }
 
-Output -
+Output =
 Enter number of nodes: 5
 Enter data: 10
 Enter data: 20
