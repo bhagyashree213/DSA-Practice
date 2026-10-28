@@ -1,5 +1,5 @@
 # Delete from End
-Code -
+Code =
 #include <stdio.h>
 #include <stdlib.h>
 struct Node {
@@ -60,7 +60,7 @@ int main() {
     return 0;
 }
 
-Output -
+Output =
 Before deletion:
 Linked List: 10 20 30 40
 Deleted element: 40
