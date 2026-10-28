@@ -1,5 +1,5 @@
 # Insert at Position
-Code -
+Code =
 #include <stdio.h>
 int main() {
     int arr[100], n, pos, value, i;
@@ -29,7 +29,7 @@ int main() {
     return 0;
 }
 
-Output -
+Output =
 Enter number of elements: 5
 Enter array elements:
 10 20 30 40 50
