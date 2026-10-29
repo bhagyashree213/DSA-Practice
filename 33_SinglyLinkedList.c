@@ -1,4 +1,4 @@
-# Singly Linked List
+# Create Singly Linked List
 Code =
 #include <stdio.h>
 #include <stdlib.h>
