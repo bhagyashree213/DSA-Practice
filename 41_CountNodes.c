@@ -9,40 +9,29 @@ struct Node {
 int main() {
     struct Node *head = NULL, *newNode, *temp;
     int n, count = 0;
-
     printf("Enter number of nodes: ");
     scanf("%d", &n);
-
     for (int i = 0; i < n; i++) {
         newNode = (struct Node *)malloc(sizeof(struct Node));
-
         printf("Enter data: ");
         scanf("%d", &newNode->data);
-
         newNode->next = NULL;
-
         if (head == NULL) {
             head = newNode;
         } else {
             temp = head;
-
             while (temp->next != NULL) {
                 temp = temp->next;
             }
-
             temp->next = newNode;
         }
     }
-
     temp = head;
-
     while (temp != NULL) {
         count++;
         temp = temp->next;
     }
-
     printf("Number of nodes = %d\n", count);
-
     return 0;
 }
 
