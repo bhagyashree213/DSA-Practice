@@ -13,12 +13,9 @@ int main() {
     scanf("%d", &n);
     for (int i = 0; i < n; i++) {
         newNode = (struct Node *)malloc(sizeof(struct Node));
-
         printf("Enter data: ");
         scanf("%d", &newNode->data);
-
         newNode->next = NULL;
-
         if (head == NULL) {
             head = newNode;
         } else {
@@ -29,12 +26,9 @@ int main() {
             temp->next = newNode;
         }
     }
-
     printf("Enter element to search: ");
     scanf("%d", &value);
-
     temp = head;
-
     while (temp != NULL) {
         if (temp->data == value) {
             found = 1;
@@ -42,12 +36,10 @@ int main() {
         }
         temp = temp->next;
     }
-
     if (found)
         printf("Element %d found in the linked list.\n", value);
     else
         printf("Element %d not found in the linked list.\n", value);
-
     return 0;
 }
 
