@@ -102,6 +102,9 @@ The repository includes practical implementations of:
 |      43 | Find Middle Node                     | `43_FindMiddleNode.c`                |
 |      44 | Remove Duplicates                    | `44_RemoveDuplicates.c`              |
 |      45 | Merge Two Linked Lists               | `45_MergeTwoLinkedLists.c`           |
+|      46 | Doubly Linked List                   | `46_DoublyLinkedList.c`              |
+|      47 | Insert at Beginning (Doubly Linked List) | `47_DoublyInsertAtBeginning.c`   |
+|      48 | Insert at End (Doubly Linked List)   | `48_DoublyInsertatEnd.c`             |
 ---
 
 ## 🔍 1. Linear Search
@@ -800,6 +803,51 @@ This program merges two Singly Linked Lists by connecting the second list to the
 
 ---
 
+## 🔗 46. Doubly Linked List
+
+A Doubly Linked List is a linear data structure in which each node contains data, a pointer to the next node, and a pointer to the previous node. This allows traversal in both forward and backward directions.
+
+**File:** `46_DoublyLinkedList.c`
+
+### Main Features
+
+* Each node stores data.
+* The `next` pointer connects to the next node.
+* The `prev` pointer connects to the previous node.
+* The list can be traversed in both directions.
+
+**Traversal Time Complexity:** O(n)
+
+---
+
+## ➕ 47. Insert at Beginning (Doubly Linked List)
+
+This program inserts a new node at the **beginning of a Doubly Linked List**.
+
+The new node becomes the head node. Its `next` pointer is connected to the previous first node, and the previous first node's `prev` pointer is updated.
+
+**File:** `47_DoublyInsertAtBeginning.c`
+
+**Time Complexity:** O(1)
+
+**Space Complexity:** O(1) extra space per new node.
+
+---
+
+## ➕ 48. Insert at End (Doubly Linked List)
+
+This program inserts a new node at the **end of a Doubly Linked List**.
+
+The program connects the new node after the current last node and updates the links so that the nodes remain connected in both directions.
+
+**File:** `48_DoublyInsertatEnd.c`
+
+**Time Complexity:** O(n), assuming the list is traversed from the head to find the last node.
+
+**Space Complexity:** O(1) extra space per new node.
+
+---
+
 ## ⏱️ Time Complexity
 
 | **Algorithm / Operation**         | **Time Complexity** |
@@ -848,7 +896,7 @@ This program merges two Singly Linked Lists by connecting the second list to the
 | Reverse Linked List               | O(n)                |
 | Find Middle Node                  | O(n)                |
 | Remove Duplicates                 | O(n²)               |
-| Merge Two Linked Lists            | O(n + m)            |
+| Merge Two Linked Lists            | O(n + m)            |\n| Doubly Linked List Traversal       | O(n)                |\n| Doubly List Insert at Beginning    | O(1)                |\n| Doubly List Insert at End          | O(n)                |
 ---
 
 ## ▶️ How to Run
@@ -959,6 +1007,9 @@ DSA-Practice/
 ├── 43_FindMiddleNode.c
 ├── 44_RemoveDuplicates.c
 ├── 45_MergeTwoLinkedList.c
+├── 46_DoublyLinkedList.c
+├── 47_DoublyInsertAtBeginning.c
+├── 48_DoublyInsertatEnd.c
 └── README.md
 ```
 
