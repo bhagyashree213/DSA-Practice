@@ -105,6 +105,9 @@ The repository includes practical implementations of:
 |      46 | Doubly Linked List                   | `46_DoublyLinkedList.c`              |
 |      47 | Insert at Beginning (Doubly Linked List) | `47_DoublyInsertAtBeginning.c`   |
 |      48 | Insert at End (Doubly Linked List)   | `48_DoublyInsertatEnd.c`             |
+|      49 | Insert at Position (Doubly Linked List) | `49_DoublyInsertAtposition.c`     |
+|      50 | Delete from Beginning (Doubly Linked List) | `50_DoublyDeletefromBeginning.c` |
+|      51 | Delete from End (Doubly Linked List) | `51_DoublyDeletefromEnd.c`          |
 ---
 
 ## 🔍 1. Linear Search
@@ -848,6 +851,42 @@ The program connects the new node after the current last node and updates the li
 
 ---
 
+## ➕ 49. Insert at Position (Doubly Linked List)
+
+This program inserts a new node at a specified position in a **Doubly Linked List** by updating the `next` and `prev` pointers.
+
+**File:** `49_DoublyInsertAtposition.c`
+
+**Time Complexity:** O(n)
+
+**Space Complexity:** O(1) extra space per new node.
+
+---
+
+## 🗑️ 50. Delete from Beginning (Doubly Linked List)
+
+This program deletes the first node from a **Doubly Linked List** and updates the head pointer and the new first node's `prev` pointer.
+
+**File:** `50_DoublyDeletefromBeginning.c`
+
+**Time Complexity:** O(1)
+
+**Space Complexity:** O(1)
+
+---
+
+## 🗑️ 51. Delete from End (Doubly Linked List)
+
+This program deletes the last node from a **Doubly Linked List** by traversing to the last node and updating the previous node's `next` pointer.
+
+**File:** `51_DoublyDeletefromEnd.c`
+
+**Time Complexity:** O(n), assuming the list is traversed from the head to find the last node.
+
+**Space Complexity:** O(1)
+
+---
+
 ## ⏱️ Time Complexity
 
 | **Algorithm / Operation**         | **Time Complexity** |
@@ -897,6 +936,9 @@ The program connects the new node after the current last node and updates the li
 | Find Middle Node                  | O(n)                |
 | Remove Duplicates                 | O(n²)               |
 | Merge Two Linked Lists            | O(n + m)            |\n| Doubly Linked List Traversal       | O(n)                |\n| Doubly List Insert at Beginning    | O(1)                |\n| Doubly List Insert at End          | O(n)                |
+| Doubly List Insert at Position     | O(n)                |
+| Doubly List Delete from Beginning  | O(1)                |
+| Doubly List Delete from End        | O(n)                |
 ---
 
 ## ▶️ How to Run
@@ -1010,6 +1052,9 @@ DSA-Practice/
 ├── 46_DoublyLinkedList.c
 ├── 47_DoublyInsertAtBeginning.c
 ├── 48_DoublyInsertatEnd.c
+├── 49_DoublyInsertAtposition.c
+├── 50_DoublyDeletefromBeginning.c
+├── 51_DoublyDeletefromEnd.c
 └── README.md
 ```
 
