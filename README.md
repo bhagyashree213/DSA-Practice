@@ -49,6 +49,8 @@ The repository includes practical implementations of:
 * Singly Linked List
 * Linked List Insertion
 * Linked List Deletion
+* Doubly Linked List Operations
+* Circular Linked List Operations
 * Basic Programming Problems
 
 ---
@@ -108,6 +110,12 @@ The repository includes practical implementations of:
 |      49 | Insert at Position (Doubly Linked List) | `49_DoublyInsertAtposition.c`     |
 |      50 | Delete from Beginning (Doubly Linked List) | `50_DoublyDeletefromBeginning.c` |
 |      51 | Delete from End (Doubly Linked List) | `51_DoublyDeletefromEnd.c`          |
+|      52 | Delete at Position (Doubly Linked List) | `52_DoublyDeleteAtPosition.c`       |
+|      53 | Reverse Doubly Linked List          | `53_ReverseDoublyLinkedList.c`      |
+|      54 | Create Circular Linked List         | `54_CreateCircularLinkedList.c`     |
+|      55 | Insert Node (Circular Linked List)   | `55_CircularInsertNode.c`           |
+|      56 | Delete Node (Circular Linked List)   | `56_CircularDeleteNode.c`           |
+|      57 | Display Circular Linked List         | `57_CircularDisplay.c`              |
 ---
 
 ## 🔍 1. Linear Search
@@ -939,6 +947,12 @@ This program deletes the last node from a **Doubly Linked List** by traversing t
 | Doubly List Insert at Position     | O(n)                |
 | Doubly List Delete from Beginning  | O(1)                |
 | Doubly List Delete from End        | O(n)                |
+| Doubly List Delete at Position     | O(n)                |
+| Reverse Doubly Linked List         | O(n)                |
+| Circular List Creation             | O(n)                |
+| Circular List Insert Node          | O(n)                |
+| Circular List Delete Node          | O(n)                |
+| Circular List Display              | O(n)                |
 ---
 
 ## ▶️ How to Run
@@ -1055,6 +1069,12 @@ DSA-Practice/
 ├── 49_DoublyInsertAtposition.c
 ├── 50_DoublyDeletefromBeginning.c
 ├── 51_DoublyDeletefromEnd.c
+├── 52_DoublyDeleteAtPosition.c
+├── 53_ReverseDoublyLinkedList.c
+├── 54_CreateCircularLinkedList.c
+├── 55_CircularInsertNode.c
+├── 56_CircularDeleteNode.c
+├── 57_CircularDisplay.c
 └── README.md
 ```
 
